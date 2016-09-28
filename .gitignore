@@ -1,0 +1,13 @@
+/node_modules
+/bower_components
+/bower.json
+/config
+/dist
+/ember-cli-build.js
+/package.json
+/README.md
+/testem.js
+/tests
+/tmp
+/vendor
+/public
