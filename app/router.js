@@ -17,8 +17,7 @@ Router.map(function() {
 
   this.route('index', {path: '/'});
 
-  this.route('exam', function() {});
-  this.route('calendar');
+
 });
 
 export default Router;
