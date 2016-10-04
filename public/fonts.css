@@ -1,0 +1,84 @@
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinblack';
+    src: url('fonts/librefranklin-black-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinbold';
+    src: url('fonts/librefranklin-bold-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinlight';
+    src: url('fonts/librefranklin-light-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinmedium';
+    src: url('fonts/librefranklin-medium-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinregular';
+    src: url('fonts/librefranklin-regular-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinsemibold';
+    src: url('fonts/librefranklin-semibold-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinthin';
+    src: url('fonts/librefranklin-thin-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
