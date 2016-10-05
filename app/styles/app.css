@@ -80,14 +80,25 @@ body{
 .menu li a{
     color:#52518f;
     font-size:13px;
-    padding:19px 0;
+    padding:21px 0;
+    position: relative;
+    transform: translateZ(0px);
 }
-.menu li a.active{
-  border-width:0 0 3px 0;
-  border-style:solid;
-  -moz-border-image: -moz-linear-gradient(top right, #a44a87 0%, #52518f 100%);
-  -webkit-border-image: -webkit-linear-gradient(top right, #a44a87 0%, #52518f 100%);
-  border-image: linear-gradient(to bottom left, #a44a87 0%, #52518f 100%);
-  border-image-slice: 1;
-
+.menu li a:before{
+  -moz-background: -moz-linear-gradient(to bottom left, #a44a87 0%, #52518f 100%);
+  -webkit-background: -webkit-linear-gradient(to bottom left, #a44a87 0%, #52518f 100%);
+  background: linear-gradient(to bottom left, #a44a87 0%, #52518f 100%);
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  transition-duration: 0.2s;
+  transition-property: left, right;
+  transition-timing-function: ease-in-out;
+}
+.menu li a.active:before{
+  left: 0;
+  right: 0;
 }
