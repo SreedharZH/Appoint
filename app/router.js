@@ -12,9 +12,10 @@ Router.map(function() {
     this.route('2-bhours');
     this.route('3-service');
     this.route('4-staff');
+    this.route('setupwizard');
   });
 
-  this.route('components', function() {
+  this.route('components',{path:'/ss'}, function() {
     this.route('my-desk', function() {
       this.route('mydesk');
     });
@@ -46,6 +47,7 @@ Router.map(function() {
 
 
 
+  this.route('dummy');
 });
 
 

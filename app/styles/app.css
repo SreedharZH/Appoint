@@ -8,17 +8,22 @@ body{
    font-family: 'libre_franklinregular';
 }
 .appoint-grid{
-  width: 100%; position: relative; margin: 0 auto; padding: 0px;
+  width: 100%; margin: 0 auto; padding: 0px; position: absolute;
+  height:100%;
 }
 .row{
   zoom:1;
+  height:100%;
 }
 .row:after,.row:before{
    display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;
 }
 .container{
-
-
+  width:100%;
+  position:relative;
+  max-width:1600px;
+  min-width:1000px;
+  height:100%;
 }
 .fl{
   float:left;
@@ -50,12 +55,12 @@ body{
   padding:20px 10px;
 }
 .logoimg{
-  width:20px;
+  width:40px;
   vertical-align:middle;
   margin-top: -2px;
   background:url(../images/logo.png) no-repeat;
   background-size:100%;
-  height:20px;
+  height:40px;
 }
 
 .logoimg > img{
@@ -101,4 +106,197 @@ body{
 .menu li a.active:before{
   left: 0;
   right: 0;
+}
+.grey-color{
+  color:#666;
+}
+
+.bg-color{
+  background-color:#f9fafc;
+}
+.col-left{
+  width:32%;
+  padding:20px 40px;
+  height:100%;
+  }
+.col-middle{
+  width:50%;
+  background-color:#fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height:100%;
+}
+.col-right{
+  width:18%;
+  padding:20px 40px;
+  height:100%;
+}
+.setup-title{
+  text-align:right;
+}
+.logo{
+  margin-bottom:40px;
+}
+.welcome-name,.setup-content{
+  color:#666;
+  font-size:14px;
+  font-family:libre_franklinregular;
+  margin-bottom:20px;
+}
+.setup-name{
+  font-size:40px;
+}
+.setup-content{
+  color:#666;
+  padding:20px 0 20px 140px;
+  line-height:22px;
+}
+
+/*steplinks*/
+.steplinks{
+  margin-top:160px;
+}
+.steplinks li{
+  margin-top:10px;
+}
+.steplinks li a{
+  color:#666;
+  font-size:13px;
+}
+.steplinks li a.active{
+  color:#666;
+}
+/*middle*/
+.stepstitle,.setup-container{
+  padding:40px;
+}
+.number{
+  background:#52518f;
+  width:36px;
+  height:36px;
+  font-size:24px;
+  color:#fff;
+  display:inline-block;
+  text-align:center;
+  padding:6px;
+}
+.name{
+  color:#52518f;
+  font-family: 'libre_franklinsemibold';
+  font-size:18px;
+  margin-left:15px;
+}
+.setup-container{
+
+}
+.forms{
+  width:100%;
+  margin-bottom:40px;
+}
+.labelname{
+  width:30%;
+  font-size:14px;
+  color:#666;
+}
+.inputbox,.inputbox-number,.selectbox{
+  width:70%;
+  border:2px solid #d4d3dd;
+  box-sizing:border-box;
+  border-radius:3px;
+}
+.inputbox-number{
+  width:30%;
+}
+.selectbox{
+  width:20%;
+  margin-left:20px;
+ position:relative;
+}
+
+.txt-input,.txt-input-url{
+  display:inline-block;
+  width:100%;
+  border:none;
+  padding:10px;
+  box-sizing:border-box;
+}
+.txt-input-url{
+  width:40%;
+  padding:10px;
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bbb;
+}
+::-moz-placeholder {
+  color: #bbb;
+}
+:-ms-input-placeholder {
+  color: #bbb;
+}
+:-moz-placeholder {
+  color: #bbb;
+}
+select:focus{
+  outline:none;
+}
+.urlname{
+  background:#f8f8f8;
+  font-size:13px;
+  color:#000;
+  padding:10px;
+  font-family: 'libre_franklinmedium';
+  width:50%;
+}
+.selectBoxes{
+  border:none;
+  width:100%;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  position:relative;
+}
+.selectbox:after{
+  content:'';
+  width:11px;
+  height:6px;
+  background:url(../images/selectarr.png) no-repeat;
+  display:inline-block;
+  position:absolute;
+  right:10px;
+  top:15px;
+
+}
+.selectBoxes option{
+  padding:9px;
+}
+.btn-nxt{
+  width:130px;
+  height:52px;
+  -moz-background: -moz-linear-gradient(to bottom left, #a44a87 0%, #52518f 100%);
+  -webkit-background: -webkit-linear-gradient(to bottom left, #a44a87 0%, #52518f 100%);
+  background: linear-gradient(to bottom left, #a44a87 0%, #52518f 100%);
+  padding:2px;
+  margin: 40px -70px 0 0;
+  trasnsition:all 0.3s ease-in-out;
+}
+.btn-nxt:hover{
+  -moz-background: -moz-linear-gradient(to bottom left,#52518f  0%, #a44a87 100%);
+  -webkit-background: -webkit-linear-gradient(to bottom left, #52518f  0%, #a44a87 100%);
+  background: linear-gradient(to bottom left, #52518f  0%, #a44a87 100%);
+}
+.btnstyle{
+  border:none;
+  width:100%;
+  height:100%;
+  background:#fff;
+  cursor:pointer;
+}
+.btnstyle:after{
+    content:'';
+    background:url(../images/nxtbtnarrow.png) no-repeat;
+    width:28px;
+    height:20px;
+    display:inline-block;
+    margin:auto;
+
+
 }

@@ -1,0 +1,39 @@
+<div class="appoint-grid bg-color over">
+    <div class="row">
+       <div class="container">
+           <div class="col-left dispinl fl boxsize">
+              <div class="logo">
+                <a href="javascript:void(0);" class="dispinl">
+                 <span class="logoimg dispinl"></span>
+
+                     <span class="logoname dispinl"> Appointment</span>
+                </a>
+              </div>
+              <div class="setup-title">
+                  <p class="welcome-name grey-color">Welcome Wilson</p>
+                  <h2 class="setup-name">Setup your <br>
+                       business
+                  </h2>
+                  <p class="setup-content grey-color">
+                     to start getting appointments Nam sit amet justo ut dui rutrum blandit. In purus augue.
+                  </p>
+              </div>
+           </div>
+           <div class="col-middle dispinl fl boxsize">
+
+                 {{partial 'setup-wizard/binfo'}}
+                 
+           </div>
+           <div class="col-right dispinl fl boxsize">
+              <ul class="steplinks">
+                 <li>{{#link-to 'setup-wizard.1-binfo'}}Business Info{{/link-to}}</li>
+                 <li>{{#link-to 'setup-wizard.2-bhours'}}Business Hours{{/link-to}}</li>
+                 <li>{{#link-to 'setup-wizard.3-service'}}Add Services{{/link-to}}</li>
+                 <li>{{#link-to 'setup-wizard.4-staff'}}Add Staffs{{/link-to}}</li>
+
+              </ul>
+           </div>
+       </div>
+    </div>
+</div>
+{{outlet}}
