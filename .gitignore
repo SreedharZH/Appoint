@@ -1,1 +1,9 @@
 /dist
+/bower_components
+/bower.json
+/config
+/node_modules
+/tests
+/tmp
+/vendor
+/testem.js

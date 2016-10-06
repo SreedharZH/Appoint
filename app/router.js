@@ -44,10 +44,6 @@ Router.map(function() {
       this.route('bsleftmenu');
     });
   });
-
-
-
-  this.route('dummy');
 });
 
 
