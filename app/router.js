@@ -15,7 +15,7 @@ Router.map(function() {
     this.route('setupwizard');
   });
 
-  this.route('components',{path:'/ss'}, function() {
+  this.route('components',{path:'/'}, function() {
     this.route('my-desk', function() {
       this.route('mydesk');
     });
