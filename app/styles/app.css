@@ -206,6 +206,9 @@ body{
 .inputbox-number{
   width:30%;
 }
+.inputbox.time{
+  width:30%;
+}
 .selectbox{
   width:20%;
   margin-left:20px;
@@ -277,6 +280,8 @@ select:focus{
   padding:2px;
   margin: 40px -70px 0 0;
   trasnsition:all 0.3s ease-in-out;
+   z-index: 9;
+   position:relative;
 }
 .btn-nxt:hover{
   -moz-background: -moz-linear-gradient(to bottom left,#52518f  0%, #a44a87 100%);
@@ -297,6 +302,39 @@ select:focus{
     height:20px;
     display:inline-block;
     margin:auto;
+}
+.tables{
+  width:100%;
+  display:table;
+  border-bottom:1px solid #000;
+  padding:10px 0;
+  }
+ .tables.border-light{
+      border-bottom:1px solid #f3f4f7;
+      padding:20px 0;
+}
+.tab-row{
+  display:table-row;
 
-
+}
+.tablecell{
+  display:table-cell;
+  width:60%;
+}
+.mins{
+  padding:10px;
+}
+.addService{
+  width:100px;
+  height:35px;
+  background:#52518f;
+  color:#fff;
+  font-size:14px;
+  padding: 10px;
+  margin:20px 0 0;
+  border-radius:2px;
+}
+.cancelService{
+  margin:0 10px 0;
+  font-size:13px;
 }
