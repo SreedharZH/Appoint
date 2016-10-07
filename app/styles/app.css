@@ -184,10 +184,12 @@ body{
 }
 .steplinks li{
   margin-top:10px;
-}
-.steplinks li a{
-  color:#666;
+  color:#bbb;
   font-size:13px;
+  cursor:pointer;
+}
+.steplinks li.active{
+color:#666;
 }
 .steplinks li a.active{
   color:#666;
@@ -385,3 +387,29 @@ select:focus{
   margin:0 10px 0;
   font-size:13px;
 }
+
+   #businessinfo,#businesshours,#addstaff,#addservice{
+     display:none;
+   }
+   #businessinfo.active,#businesshours.active,#addstaff.active,#addservice.active{
+     display:block;
+   }
+
+   .col-middle .stepstitle,
+   .col-middle .setup-container .forms {
+   opacity: 0;
+   transition: opacity 0.5s ease 0s;
+   will-change: transform, opacity;
+   }
+   .col-middle .stepstitle{
+   animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
+   opacity: 1;
+   }
+   .col-middle .setup-container .forms {
+   animation: 0.8s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
+   opacity: 1;
+   }
+   @keyframes slide-quote {
+   0% {
+   transform: scaleY(1.4) translateY(80px);
+   }

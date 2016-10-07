@@ -22,14 +22,16 @@
            <div class="col-middle dispinl fl boxsize">
 
                  {{partial 'setup-wizard/binfo'}}
-                 <!-- {{partial 'setup-wizard/service'}} -->
+                 {{partial 'setup-wizard/bhours'}}
+                 {{partial 'setup-wizard/service'}}
+                 {{partial 'setup-wizard/staff'}}
            </div>
            <div class="col-right dispinl fl boxsize">
-              <ul class="steplinks">
-                 <li>{{#link-to 'setup-wizard.1-binfo'}}Business Info{{/link-to}}</li>
-                 <li>{{#link-to 'setup-wizard.2-bhours'}}Business Hours{{/link-to}}</li>
-                 <li>{{#link-to 'setup-wizard.3-service'}}Add Services{{/link-to}}</li>
-                 <li>{{#link-to 'setup-wizard.4-staff'}}Add Staffs{{/link-to}}</li>
+              <ul class="steplinks" {{action "pressed"}}>
+                 <li data-tab="businessinfo" class="active">Business Info</li>
+                 <li data-tab="businesshours">Business Hours</li>
+                 <li data-tab="addservice">Add Services</li>
+                 <li data-tab="addstaff">Add Staffs</li>
 
               </ul>
            </div>
