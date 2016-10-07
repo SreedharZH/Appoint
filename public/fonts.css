@@ -1,11 +1,22 @@
 
 
 
-
 @font-face {
     font-family: 'libre_franklinblack';
     src: url('fonts/librefranklin-black-webfont.woff2') format('woff2'),
          url('fonts/librefranklin-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinblack_italic';
+    src: url('fonts/librefranklin-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,6 +38,78 @@
 
 
 @font-face {
+    font-family: 'libre_franklinbold_italic';
+    src: url('fonts/librefranklin-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinextrabold';
+    src: url('fonts/librefranklin-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinXBdIt';
+    src: url('fonts/librefranklin-extrabolditalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinextralight';
+    src: url('fonts/librefranklin-extralight-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinXLtIt';
+    src: url('fonts/librefranklin-extralightitalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinitalic';
+    src: url('fonts/librefranklin-italic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
     font-family: 'libre_franklinlight';
     src: url('fonts/librefranklin-light-webfont.woff2') format('woff2'),
          url('fonts/librefranklin-light-webfont.woff') format('woff');
@@ -39,9 +122,33 @@
 
 
 @font-face {
+    font-family: 'libre_franklinlight_italic';
+    src: url('fonts/librefranklin-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
     font-family: 'libre_franklinmedium';
     src: url('fonts/librefranklin-medium-webfont.woff2') format('woff2'),
          url('fonts/librefranklin-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinmedium_italic';
+    src: url('fonts/librefranklin-mediumitalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-mediumitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -75,9 +182,33 @@
 
 
 @font-face {
+    font-family: 'libre_franklinsemibold_italic';
+    src: url('fonts/librefranklin-semibolditalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
     font-family: 'libre_franklinthin';
     src: url('fonts/librefranklin-thin-webfont.woff2') format('woff2'),
          url('fonts/librefranklin-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'libre_franklinthin_italic';
+    src: url('fonts/librefranklin-thinitalic-webfont.woff2') format('woff2'),
+         url('fonts/librefranklin-thinitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
