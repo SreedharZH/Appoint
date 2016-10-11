@@ -5,7 +5,7 @@
 
  </div>
 <div class="setup-container boxsize">
-   <div class="tables">
+   <div class="tables ">
 
          <div class="tablecell">
             Service Name
@@ -13,46 +13,32 @@
          <div class="tablecell">
             Duration
          </div>
-      </div>
-      <div class="tables border-light list-pages">
+    </div>
+    <div class="list-pages">
 
-         <div class="tablecell">
-           <span>
-                Body massage
-            </span>
-         </div>
-         <div class="tablecell">
-           <span>
-                      30 Mins
-          </span>
-
-
-         </div>
-
-
-      </div>
+    </div>
 
     <div class="tables border-light">
 
        <div class="tablecell">
          <span class="inputbox dispinl fl">
-              {{input placeholder="Service name" class="txt-input"}}
-              
+              {{input type="text" placeholder="Service name" class="txt-input" name="serviceName" id="serviceName" }}
+
           </span>
        </div>
        <div class="tablecell">
          <span class="inputbox dispinl fl time">
-               {{input placeholder="00" class="txt-input"}}
-
+               {{input placeholder="00" class="txt-input" name="time" id="time" }}
           </span>
 
           <span class="dispinl fl mins grey-color">Mins</span>
        </div>
-       <div class="tab-row">
-           <a href="#" class="addService dispinl boxsize"> Add Service</a>
-           <a href="#" class="cancelService dispinl boxsize grey-color">Cancel</a>
-       </div>
 
+
+    </div>
+    <div class="tab-row">
+        <a href="#" class="addService dispinl boxsize" {{action "addService"}}> Add Service</a>
+        <a href="#" class="cancelService dispinl boxsize grey-color">Cancel</a>
     </div>
     <div class="btn-nxt boxsize fr">
         <button class="btnstyle dispinl"></button>
