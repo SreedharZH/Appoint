@@ -3,7 +3,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   actions: {
         pressed: function() {
-          $(".steplinks li").click(function(){
+
+            $(".steplinks li").click(function(){
             var findloc = $(this).data('tab');
             $('.steplinks li').removeClass('active');
             $(this).addClass('active');
@@ -11,8 +12,14 @@ export default Ember.Route.extend({
              $("#"+findloc).addClass('active');
 
 
-          })
+          });
 
+        },
+        clickevt: function(){
+           var $txtvalue = $("#txtvalue").val(); 
+           $("#enter").text($txtvalue);
         }
     }
+
+
 });

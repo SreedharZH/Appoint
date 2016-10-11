@@ -394,7 +394,22 @@ select:focus{
    #businessinfo.active,#businesshours.active,#addstaff.active,#addservice.active{
      display:block;
    }
-
+   .uploadimage {
+     float:left;
+   }
+   .staffdetail{
+     margin:10px 0 10px 10px
+   }
+   .staffname,.jobdescription{
+     display:block;
+     color:#000;
+    margin: 5px 0;
+    font-size:16px;
+   }
+   .jobdescription{
+     font-size:13px;
+     color:#aaa;
+   }
    .col-middle .stepstitle,
    .col-middle .setup-container .forms {
    opacity: 0;
@@ -413,4 +428,3 @@ select:focus{
    0% {
    transform: scaleY(1.4) translateY(80px);
    }
-   
