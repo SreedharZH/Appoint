@@ -43,6 +43,9 @@ body{
 .boxsize{
   box-sizing:border-box;
 }
+.hide{
+  display:none !important;
+}
 /* header */
 .header{
   height:60px;
@@ -362,6 +365,12 @@ select:focus{
       border-bottom:1px solid #f3f4f7;
       padding:20px 0;
 }
+.tables.border-light.addServiceEnable{
+
+}
+.tables.border-light.addServiceDisable{
+
+}
 .tab-row{
   display:table-row;
 
@@ -370,10 +379,11 @@ select:focus{
   display:table-cell;
   width:60%;
 }
+
 .mins{
   padding:10px;
 }
-.addService{
+.addService,.cancelService{
   width:100px;
   height:35px;
   background:#52518f;
@@ -384,10 +394,17 @@ select:focus{
   border-radius:2px;
 }
 .cancelService{
-  margin:0 10px 0;
+  text-align:center;
   font-size:13px;
+  background:transparent;
+  color:#666;
 }
-
+.addplus{
+   color: #52518f;
+   display: inline-block;
+   font-size: 15px;
+   margin: 20px 0;
+}
    #businessinfo,#businesshours,#addstaff,#addservice{
      display:none;
    }

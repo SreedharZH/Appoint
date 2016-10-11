@@ -17,8 +17,10 @@
     <div class="list-pages">
 
     </div>
-
-    <div class="tables border-light">
+    <div class="table-row">
+        <a href="javascript:void(0);" class="addplus hide" {{action "addAction"}}>+ Add Service</a>
+    </div>
+    <div class="tables border-light addServiceEnable">
 
        <div class="tablecell">
          <span class="inputbox dispinl fl">
@@ -28,18 +30,18 @@
        </div>
        <div class="tablecell">
          <span class="inputbox dispinl fl time">
-               {{input placeholder="00" class="txt-input" name="time" id="time" }}
+               {{input placeholder="00" class="txt-input" name="serTime" id="serTime" }}
           </span>
 
           <span class="dispinl fl mins grey-color">Mins</span>
        </div>
 
+       <div class="tab-row">
+           <a href="javascript:void(0);" class="addService dispinl boxsize" {{action "addService"}}> Add Service</a>
+           <a href="javascript:void(0);" class="cancelService dispinl boxsize hide"  {{action "cancelService"}}>Cancel</a>
+       </div>
+    </div>
 
-    </div>
-    <div class="tab-row">
-        <a href="#" class="addService dispinl boxsize" {{action "addService"}}> Add Service</a>
-        <a href="#" class="cancelService dispinl boxsize grey-color">Cancel</a>
-    </div>
     <div class="btn-nxt boxsize fr">
         <button class="btnstyle dispinl"></button>
     </div>

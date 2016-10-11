@@ -10,14 +10,27 @@ export default Ember.Route.extend({
             $(this).addClass('active');
              $('.tabcontainer').removeClass('active');
              $("#"+findloc).addClass('active');
-
-
           });
 
         },
-        clickevt: function(){
-           var $txtvalue = $("#txtvalue").val(); 
-           $("#enter").text($txtvalue);
+        addService : function(){
+           var $serName = $("#serviceName").val();
+           var $serTime = $("#serTime").val();
+           var markup = "<div class='tables border-light'><div class='tablecell'><span>" + $serName + "</span></div><div class='tablecell'><span>" + $serTime + " Mins </span></div></div>";
+           $("input[type=text], textarea").val("");
+           $(".list-pages").append(markup);
+           $(".addServiceEnable").css('display','none');
+           $('.addplus').removeClass('hide');
+        },
+        addAction :function(){
+           $('.addplus').addClass('hide');
+           $(".addServiceEnable").css('display','block');
+           $(".cancelService").removeClass('hide');
+        },
+        cancelService :function(){
+        $("input[type=text], textarea").val("");
+        $(".addServiceEnable").css('display','none');
+        $('.addplus').removeClass('hide');
         }
     }
 
