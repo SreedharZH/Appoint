@@ -21,11 +21,13 @@
               </div>
            </div>
            <div class="col-middle dispinl fl boxsize">
-
-                 {{partial 'setup-wizard/binfo'}}
-                 {{partial 'setup-wizard/bhours'}}
-                 {{partial 'setup-wizard/service'}}
-                 {{partial 'setup-wizard/staff'}}
+                 <span>{{partial 'setup-wizard/binfo'}}</span>
+                  <span>{{partial 'setup-wizard/bhours'}}</span>
+                  <span>{{partial 'setup-wizard/service'}}</span>
+                  <span>{{partial 'setup-wizard/staff'}}</span>
+                  <div class="btn-nxt boxsize fr">
+                      <button class="btnstyle dispinl"></button>
+                  </div>
            </div>
            <div class="col-right dispinl fl boxsize">
               <ul class="steplinks" {{action "pressed"}}>
