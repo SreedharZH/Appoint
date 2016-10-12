@@ -1,11 +1,251 @@
 <div id="businesshours" class="tabcontainer">
   <div class="stepstitle">
-     <span class="number boxsize">3</span>
+     <span class="number boxsize">2</span>
      <span class="name boxsize dispinl">Business Hours</span>
 
    </div>
 
-   {{input value=myValue id="txtvalue"}}
-   <p id="enter">ss</p>
- <button {{action "clickevt"}} >click</button>
+<div class="setup-container boxsize">
+   <div class="appointlist">
+    <div class="appointtable chk">
+      <div class="appointtabcell chkbox">
+        <span class="checkedbox"></span>
+      </div>
+       <div class="appointtabcell days">
+         <span>Monday</span>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="From" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham showele">AM</span>
+                <span class="swap switchpm">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="To" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+    </div>
+    <div class="appointtable unchk">
+      <div class="appointtabcell chkbox">
+        <span class="checkedbox"></span>
+      </div>
+       <div class="appointtabcell days">
+         <span>Tuesday</span>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="From" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="To" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+    </div>
+    <div class="appointtable unchk">
+      <div class="appointtabcell chkbox">
+        <span class="checkedbox"></span>
+      </div>
+       <div class="appointtabcell days">
+         <span>Wednesday</span>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="From" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="To" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+    </div>
+    <div class="appointtable unchk">
+      <div class="appointtabcell chkbox">
+        <span class="checkedbox"></span>
+      </div>
+       <div class="appointtabcell days">
+         <span>Thursday</span>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="From" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="To" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+    </div>
+    <div class="appointtable unchk">
+      <div class="appointtabcell chkbox">
+        <span class="checkedbox"></span>
+      </div>
+       <div class="appointtabcell days">
+         <span>Friday</span>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="From" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="To" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+    </div>
+    <div class="appointtable unchk">
+      <div class="appointtabcell chkbox">
+        <span class="checkedbox"></span>
+      </div>
+       <div class="appointtabcell days">
+         <span>Saturday</span>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="From" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="To" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+    </div>
+    <div class="appointtable unchk">
+      <div class="appointtabcell chkbox">
+        <span class="checkedbox"></span>
+      </div>
+       <div class="appointtabcell days">
+         <span>Sunday</span>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="From" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+       <div class="appointtabcell">
+          <div class="dispinl fl fromtime">
+              {{input placeholder="To" class="txt-input" }}
+          </div>
+          <div class="dispinl fl">
+             <div class="switch dispinl" {{action "switchbtn"}}>
+                <span class="swap switcham">AM</span>
+                <span class="swap">PM</span>
+             </div>
+
+
+          </div>
+       </div>
+    </div>
+  </div>
+
+</div>
 </div>

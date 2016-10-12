@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
+        nextStep: function(){
+          this.transitionTo()
+        },
         pressed: function() {
 
             $(".steplinks li").click(function(){
@@ -31,7 +34,16 @@ export default Ember.Route.extend({
         $("input[type=text], textarea").val("");
         $(".addServiceEnable").css('display','none');
         $('.addplus').removeClass('hide');
-        }
+      },
+       switchbtn : function(){
+         var $mark = this.children('.swap').text();
+         alert($mark);
+         if($mark.hasClass('showele')){
+
+             $(".swap.switcham").removeClass('showele');
+             $(".swap.switchpm").addClass('showele');
+         }
+      }
     }
 
 
