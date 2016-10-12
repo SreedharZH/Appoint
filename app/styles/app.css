@@ -293,7 +293,7 @@ select:focus{
   padding:13px 10px;
   font-family: 'libre_franklinmedium';
   max-width: 210px;
-  min-width: 200px;
+  min-width: 198px;
   border-right: 1px solid #d4d3dd;
 }
 .selectBoxes{
@@ -305,7 +305,9 @@ select:focus{
   font-size: 14px;
   font-family: libre_franklinregular;
   color: #000;
-  padding: 0 10px;
+  padding: 10px 10px;
+  height: 38px;
+  background: none;
 }
 .selectbox:after{
   content:'';
@@ -514,7 +516,7 @@ select:focus{
   opacity:0;
 }
 
-  .col-middle .stepstitle, .col-middle .setup-container .forms {
+  .col-middle .stepstitle, .col-middle .setup-container {
    opacity: 0;
    transition: opacity 0.5s ease 0s;
    will-change: transform, opacity;
@@ -523,7 +525,7 @@ select:focus{
    animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
    opacity: 1;
    }
-   .col-middle .setup-container .forms {
+   .col-middle .setup-container {
    animation: 0.8s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
    opacity: 1;
    }
