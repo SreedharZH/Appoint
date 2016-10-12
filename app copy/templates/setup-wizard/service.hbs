@@ -1,0 +1,50 @@
+<div id="addservice" class="tabcontainer">
+<div class="stepstitle">
+   <span class="number boxsize">3</span>
+   <span class="name boxsize dispinl">Add Service</span>
+
+ </div>
+<div class="setup-container boxsize">
+   <div class="tables ">
+
+         <div class="tablecell">
+            Service Name
+         </div>
+         <div class="tablecell">
+            Duration
+         </div>
+    </div>
+    <div class="list-pages">
+
+    </div>
+    <div class="table-row">
+        <a href="javascript:void(0);" class="addplus hide" {{action "addAction"}}>+ Add Service</a>
+    </div>
+    <div class="tables border-light addServiceEnable">
+
+       <div class="tablecell">
+         <span class="inputbox dispinl fl">
+              {{input type="text" placeholder="Service name" class="txt-input" name="serviceName" id="serviceName" }}
+
+          </span>
+       </div>
+       <div class="tablecell">
+         <span class="inputbox dispinl fl time">
+               {{input placeholder="00" class="txt-input" name="serTime" id="serTime" }}
+          </span>
+
+          <span class="dispinl fl mins grey-color">mins</span>
+       </div>
+
+       <div class="tab-row">
+           <a href="javascript:void(0);" class="addService dispinl boxsize" {{action "addService"}}> Add Service</a>
+           <a href="javascript:void(0);" class="cancelService dispinl boxsize hide"  {{action "cancelService"}}>Cancel</a>
+       </div>
+    </div>
+
+
+</div>
+<div class="btn-nxt boxsize fr">
+    <button class="btnstyle dispinl"></button>
+</div>
+</div>

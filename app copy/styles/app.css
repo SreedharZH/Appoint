@@ -519,7 +519,7 @@ select:focus{
   opacity:0;
 }
 
-  .col-middle .stepstitle, .col-middle .setup-container {
+  /*.col-middle .stepstitle, .col-middle .setup-container {
    opacity: 0;
    transition: opacity 0.5s ease 0s;
    will-change: transform, opacity;
@@ -529,14 +529,14 @@ select:focus{
    opacity: 1;
    }
    .col-middle .setup-container {
-   animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
+   animation: 0.8s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
    opacity: 1;
    }
    @keyframes slide-quote {
    0% {
    transform: scaleY(1.4) translateY(80px);
    }
- }
+ }*/
 
  /*add staff*/
  /*radio*/
