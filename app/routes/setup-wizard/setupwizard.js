@@ -2,9 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-        nextStep: function(){
-          this.transitionTo()
-        },
+        
         pressed: function() {
 
             $(".steplinks li").click(function(){
