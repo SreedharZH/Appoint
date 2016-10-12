@@ -1,8 +1,12 @@
 import Ember from 'ember';
 
+Ember.run.scheduleOnce('afterRender', this, function() {
+  Ember.$('.header').hide();
+});
+
 export default Ember.Route.extend({
   actions: {
-        
+
         pressed: function() {
 
             $(".steplinks li").click(function(){
