@@ -176,11 +176,9 @@ table {
 }
 body{
    font-family: 'libre_franklinregular';
+   background-color:#f9fafc;
 }
-.appoint-grid{
-  width: 100%; margin: 0 auto; padding: 0px; position: absolute;
-  height:100%;
-}
+
 .row{
   zoom:1;
   height:100%;
@@ -188,12 +186,15 @@ body{
 .row:after,.row:before{
    display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;
 }
+
 .container{
   width:100%;
-  position:relative;
   max-width:1600px;
   min-width:1000px;
   height:100%;
+}
+.clearfix{
+  clear:both;
 }
 .fl{
   float:left;
@@ -284,26 +285,29 @@ body{
   color:#666;
 }
 
-.bg-color{
-  background-color:#f9fafc;
-}
+
 .col-left{
   width:32%;
-  padding:20px 60px 20px 40px;
+  padding:40px 60px 20px 40px;
   height:100%;
+  position: fixed;
+  left:0;
   }
 .col-middle{
   width:50%;
   background-color:#fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height:100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  min-height:100%;
   padding: 0 20px;
-  position: relative;
+  position: absolute;
+  left:32%;
 }
 .col-right{
   width:18%;
   padding:20px 40px 20px 60px;
   height:100%;
+  position: fixed;
+  right:0;
 }
 .setup-title{
   text-align:right;
@@ -370,9 +374,13 @@ color:#666;
   color:#666;
 }
 /*middle*/
-.stepstitle,.setup-container{
-  padding:40px;
+.stepstitle{
+  padding:60px 40px 20px;
 }
+.setup-container{
+  padding:20px 40px;
+}
+
 .number{
   font-family: libre_franklinregular;
   background:#52518f;
@@ -507,7 +515,7 @@ select:focus{
    z-index: 9;
    position:absolute;
    right: -30px;
-   bottom: 70px;
+   bottom: 30px;
 }
 .btn-nxt:hover{
   -moz-background: -moz-linear-gradient(to bottom left,#52518f  0%, #a44a87 100%);
