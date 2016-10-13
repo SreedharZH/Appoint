@@ -330,7 +330,7 @@ body{
 .setup-name .grd1,
 .setup-name .grd2{
   color: #000;
-  background: #fff;
+  background: #f9fafc;
   position: relative;
   display:inline-block;
   mix-blend-mode: multiply;
@@ -703,16 +703,17 @@ select:focus{
    will-change: transform, opacity;
    }
    .col-middle .stepstitle{
-   animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
+   animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-from-down ;
    opacity: 1;
    }
    .col-middle .setup-container {
-   animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-quote;
+   animation: 0.6s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-from-down ;
    opacity: 1;
    }
-   @keyframes slide-quote {
+
+   @keyframes slide-from-down {
    0% {
-   transform: scaleY(1.4) translateY(80px);
+   transform: scaleY(1.2) translateY(800px);
    }
  }
 
