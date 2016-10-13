@@ -178,6 +178,15 @@ body{
    font-family: 'libre_franklinregular';
    background-color:#f9fafc;
 }
+.mt80{
+  margin-top: 80px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.no-border-bottom{
+  border-bottom: none !important;
+}
 
 .row{
   zoom:1;
@@ -355,6 +364,9 @@ body{
   color:#666;
   padding:15px 0 20px 140px;
   line-height:22px;
+}
+.zlogo{
+  margin-top: 70%;
 }
 
 /*steplinks*/
@@ -541,11 +553,11 @@ select:focus{
   width:100%;
   display:table;
   border-bottom:1px solid #aaa;
-  padding:15px 0;
+  padding:10px 0;
   }
  .tables.border-light{
       border-bottom:1px solid #f3f4f7;
-      padding:30px 0;
+      padding:25px 0;
 }
 .tables.border-light.addServiceEnable{
 
@@ -567,13 +579,13 @@ select:focus{
   font-size: 13px;
 }
 .addService,.cancelService{
-  width:100px;
-  height:35px;
+  /*width:100px;
+  height:35px;*/
   background:#52518f;
   color:#fff;
   font-size:14px;
   padding: 10px;
-  margin:20px 0 0;
+  margin:30px 0 0;
   border-radius:2px;
 }
 .cancelService{
