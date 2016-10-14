@@ -10,7 +10,7 @@
             <label>Business Name</label>
         </span>
          <span class="inputbox dispinl fl">
-               <input type="text" placeholder="Zoho appointment" class="txt-input"/>
+               {{input key-up='urlGenerate' type="text" placeholder="Zoho appointment" class="txt-input" value=bname }}
           </span>
       </div>
               <div class="forms over">
@@ -19,7 +19,7 @@
                   </span>
                   <span class="inputbox dispinl fl">
                     <span class="urlname dispinl fl">http://zoho.com/appointment/</span>
-                      <input type="text" placeholder="" class="txt-input-url"/>
+                      <input  type="text" placeholder="" class="txt-input-url" value={{bname}} />
                   </span>
                  </div>
                  <div class="forms over">

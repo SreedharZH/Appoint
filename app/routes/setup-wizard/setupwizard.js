@@ -4,17 +4,21 @@ Ember.run.scheduleOnce('afterRender', this, function() {
   Ember.$('.header').hide();
 });
 
+
 export default Ember.Route.extend({
   actions: {
         nextStep: function(){
-
           if(!($('.tabcontainer.active').last().index()==($('.tabcontainer').length-1))){
             $('.tabcontainer.active').removeClass('active').next().addClass('active');
             $('.steplinks li.active').removeClass('active').next().addClass('active');
             if($('.tabcontainer.active').last().index()==3){
-              
+
             }
           }
+        },
+
+        urlGenerate: function(e){
+          // alert((e.keyCode));
         },
 
         pressed: function() {

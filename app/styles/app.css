@@ -322,7 +322,7 @@ body{
   text-align:right;
 }
 .logo{
-  margin-bottom:40px;
+  margin-bottom:50px;
 }
 .welcome-name,.setup-content{
   color:#666;
@@ -366,24 +366,56 @@ body{
   line-height:22px;
 }
 .zlogo{
-  margin-top: 70%;
+  position: fixed;
+  bottom: 40px;
 }
 
 /*steplinks*/
 .steplinks{
   margin-top:160px;
+  position: relative;
+  transition: all ease 1s;
 }
 .steplinks li{
-  margin-top:15px;
-  color:#bbb;
+  margin-top:25px;
+  color:#ddd;
   font-size:13px;
   cursor:pointer;
+  padding-left:20px;
+  position: relative;
+}
+.steplinks li:before{
+  width:5px;
+  height:5px;
+  content:'';
+  display:inline-block;
+  position: absolute;
+  left:-5px;
+  border-radius: 50%;
+  background-color:#ddd;
+  top: 5px;
+}
+.steplinks li.active:before{
+  width:13px;
+  height: 13px;
+  background-color: #52518F;
+  top: 0px;
+  left:-9px;
+}
+.steplinks li:after{
+  position: absolute;
+  width:1px;
+  height:23px;
+  background-color: #efefef;
+  content:'';
+  top:15px;
+  left:-3px;
+}
+.steplinks li:last-child:after{
+  display: none;
 }
 .steplinks li.active{
-color:#666;
-}
-.steplinks li a.active{
-  color:#666;
+  color:#52518F;
 }
 /*middle*/
 .stepstitle{
@@ -709,21 +741,18 @@ select:focus{
   opacity:0;
 }
 
-  .col-middle .stepstitle, .col-middle .setup-container {
+.slide-up {
    opacity: 0;
    transition: opacity 0.5s ease 0s;
    will-change: transform, opacity;
-   }
-   .col-middle .stepstitle{
-   animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-from-down ;
-   opacity: 1;
-   }
-   .col-middle .setup-container {
    animation: 0.6s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-from-down ;
    opacity: 1;
-   }
+ }
+ .slide-up-slow{
+   animation: 0.5s cubic-bezier(0.2, 0.6, 0.3, 1) 0s normal none 1 running slide-from-down ;
+ }
 
-   @keyframes slide-from-down {
+ @keyframes slide-from-down {
    0% {
    transform: scaleY(1.2) translateY(800px);
    }
