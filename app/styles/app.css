@@ -314,6 +314,10 @@ text-align:right;
 .logo {
 margin-bottom:50px;
 }
+.bottomNavigate{
+  width:50%;
+  float:right;
+}
 .welcome-name, .setup-content {
 color:#666666;
 font-family:libre_franklinregular;
@@ -352,14 +356,14 @@ background:linear-gradient(330deg, #64387E 30%, #4175A8) 0 0 repeat scroll rgba(
 .setup-content {
 color:#666666;
 line-height:22px;
-padding:15px 0 20px 140px;
+padding:0px 0 20px 140px;
 }
 .zlogo {
 bottom:40px;
 position:fixed;
 }
 .steplinks {
-margin-top:150px;
+margin-top:70px;
 position:relative;
 text-align:left;
 transition:all 1s ease;
@@ -596,11 +600,14 @@ display:block;
 }
 .uploadimage {
 float:left;
-height:70px;
-width:70px;
+height:50px;
+width:50px;
+}
+.uploadimage > img{
+  width:100%;
 }
 .staffdetail {
-margin:10px 0 10px 10px;
+margin:0px 0 10px 10px;
 }
 .staffname, .jobdescription {
 color:#000000;
@@ -634,24 +641,48 @@ width:20%;
 .chkbox {
 width:3%;
 }
-.appointtable.unchk {
-color:#E4E4E4;
+appointtable.unchk{
+      color:#e4e4e4;
+
+    }
+
+.appointtable.list-row .unchkedbox,.appointtable.list-row .unchkedbox.chkedbox{
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 15px;
+  margin-top: -2px;
+  vertical-align: middle;
+  width: 15px;
+  display:inline-block;
 }
-.appointtable.unchk .checkedbox, .appointtable.chk .checkedbox {
-border:2px solid #E4E4E4;
-border-radius:2px;
-box-sizing:border-box;
-cursor:pointer;
-display:inline-block;
-height:15px;
-margin-top:-2px;
-vertical-align:middle;
-width:15px;
-}
-.appointtable.chk .checkedbox {
-background-color:#525290;
-border:2px solid #525290;
-}
+
+  .appointtable.unchk .checkedbox,.appointtable.chk .chkedbox{
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 15px;
+    margin-top: -2px;
+    vertical-align: middle;
+    width: 15px;
+    display:inline-block;
+
+    }
+    .appointtable.list-row .unchkedbox.chkedbox{
+      border: 1px solid #525290;
+
+    }
+    .appointtable.list-row .unchkedbox.chkedbox:before{
+    background:url("../images/activearrow.png") no-repeat scroll 0 0 / 100% auto;
+    content: "";
+    display: block;
+    height: 8px;
+    margin: 3px auto;
+    width: 9px;
+    }
+
 .days {
 }
 .fromtime {
