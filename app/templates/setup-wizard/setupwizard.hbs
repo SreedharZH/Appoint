@@ -1,17 +1,17 @@
 <div class="appoint-grid over">
     <div class="row">
-       <div class="container">
-           <div class="col-left dispinl fl boxsize">
+       <div class="container pos-abs">
+           <div class="col-left dis-inbl fl boxsize">
               <div class="logo">
-                <a href="javascript:void(0);" class="dispinl">
-                 <span class="logoimg dispinl"></span>
-                 <span class="logoname dispinl"> Appointment</span>
+                <a href="javascript:void(0);" class="dis-inbl">
+                 <span class="logoimg dis-inbl"></span>
+                 <span class="logoname dis-inbl"> Appointment</span>
                 </a>
               </div>
               <div class="setup-title">
-                  <p class="welcome-name grey-color">Welcome Wilson,</p>
-                  <p class="setup-content grey-color">
-                     to start getting appointments
+                  <p class="welcome-name">Welcome <span class="user-name">Wilson!</span></p>
+                  <p class="welcome-name">
+                     To start getting appointments,
                   </p>
                   <h2 class="setup-name">
                       <span class="grd1">Setup your</span>
@@ -28,16 +28,16 @@
               </div>
               <div class="zlogo"><img src="/images/zlogo.png" alt="zohologo"/></div>
            </div>
-           <div class="col-middle dispinl fl boxsize">
+           <div class="col-middle dis-inbl fl boxsize">
                  {{partial 'setup-wizard/binfo'}}
                  {{partial 'setup-wizard/bhours'}}
                   {{partial 'setup-wizard/service'}}
                   {{partial 'setup-wizard/staff'}}
                   <div {{action 'nextStep'}} class="btn-nxt boxsize fr">
-                      <button class="btnstyle dispinl"></button>
+                      <button class="btnstyle dis-inbl"></button>
                   </div>
            </div>
-           <!-- <div class="col-right dispinl fl boxsize">
+           <!-- <div class="col-right dis-inbl fl boxsize">
               <ul class="steplinks" {{action "pressed"}}>
                  <li data-tab="businessinfo" class="active">Business Info</li>
                  <li data-tab="businesshours">Business Hours</li>

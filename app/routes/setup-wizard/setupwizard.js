@@ -38,17 +38,17 @@ export default Ember.Route.extend({
            $("input[type=text], textarea").val("");
            $(".list-pages").append(markup);
            $(".addServiceEnable").css('display','none');
-           $('.addplus').removeClass('hide');
+           $('.addplus').removeClass('hide-imp');
         },
         addAction :function(){
-           $('.addplus').addClass('hide');
+           $('.addplus').addClass('hide-imp');
            $(".addServiceEnable").css('display','block');
-           $(".cancelService").removeClass('hide');
+           $(".cancelService").removeClass('hide-imp');
         },
         cancelService :function(){
         $("input[type=text], textarea").val("");
         $(".addServiceEnable").css('display','none');
-        $('.addplus').removeClass('hide');
+        $('.addplus').removeClass('hide-imp');
       },
        switchbtn : function(){
          var $mark = this.children('.swap').text();
