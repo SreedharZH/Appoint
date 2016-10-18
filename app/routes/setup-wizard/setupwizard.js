@@ -10,9 +10,11 @@ export default Ember.Route.extend({
         nextStep: function(){
           if(!($('.tabcontainer.active').last().index()==($('.tabcontainer').length-1))){
             $('.tabcontainer.active').removeClass('active').next().addClass('active');
-            $('.steplinks li.active').removeClass('active').next().addClass('active');
-            if($('.tabcontainer.active').last().index()==3){
 
+            $('.steplinks li.active').removeClass('active').next().addClass('active');
+            $('.steplinks li.active').prev().addClass('modified');
+            if($('.tabcontainer.active').last().index()==3){
+               $('.steplinks li').addClass('modified');
             }
           }
         },

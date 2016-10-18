@@ -1,251 +1,139 @@
 <div id="businesshours" class="tabcontainer">
-  <div class="stepstitle slide-up-slow">
-     <span class="number boxsize">2</span>
-     <span class="name boxsize dis-inbl">Business Hours</span>
+    <div class="stepstitle slide-up-slow">
+    <span class="number boxsize">2</span>
+    <span class="name boxsize dis-inbl">Business Hours</span>
 
-   </div>
-
-   <div class="setup-container boxsize slide-up">
-      <div class="appointlist">
-       <div class="appointtable list-row">
-         <div class="appointtabcell chkbox">
-           <span class="unchkedbox chkedbox" {{action "chkbox"}}></span>
+  </div>
+         <div class="setup-container boxsize slide-up">
+           <div class="appointlist ">
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> </div>
+               <div class="appointtabcell days"> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl"> <span>From</span></div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}>  </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl "> To</div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}>  </div>
+                 </div>
+               </div>
+             </div>
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> <span class="unchkedbox chkedbox" {{action "chkbox"}}></span> </div>
+               <div class="appointtabcell days"> <span>Monday</span> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+             </div>
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> <span class="unchkedbox" {{action "click"}}></span> </div>
+               <div class="appointtabcell days"> <span>Tuesday</span> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+             </div>
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> <span class="unchkedbox" {{action "chkbox"}}></span> </div>
+               <div class="appointtabcell days"> <span>Wednesday</span> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+             </div>
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> <span class="unchkedbox"></span> </div>
+               <div class="appointtabcell days"> <span>Thursday</span> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+             </div>
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> <span class="unchkedbox"></span> </div>
+               <div class="appointtabcell days"> <span>Friday</span> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+             </div>
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> <span class="unchkedbox"></span> </div>
+               <div class="appointtabcell days"> <span>Saturday</span> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+             </div>
+             <div class="appointtable list-row">
+               <div class="appointtabcell chkbox"> <span class="unchkedbox"></span> </div>
+               <div class="appointtabcell days"> <span>Sunday</span> </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+               <div class="appointtabcell">
+                 <div class="dis-inbl fl fromtime"> <input placeholder="" class="txt-input" /> </div>
+                 <div class="dis-inbl fr">
+                   <div class="switch dis-inbl" {{action "switchbtn"}}> <span class="swap switcham showele">AM</span> <span class="swap switchpm">PM</span> </div>
+                 </div>
+               </div>
+             </div>
+           </div>
          </div>
-          <div class="appointtabcell days">
-            <span>Monday</span>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="From" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham showele">AM</span>
-                   <span class="swap switchpm">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="To" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
        </div>
-       <div class="appointtable list-row">
-         <div class="appointtabcell chkbox">
-           <span class="unchkedbox" {{action "click"}}></span>
-         </div>
-          <div class="appointtabcell days">
-            <span>Tuesday</span>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="From" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="To" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-       </div>
-       <div class="appointtable list-row">
-         <div class="appointtabcell chkbox">
-           <span class="unchkedbox" {{action "chkbox"}}></span>
-         </div>
-          <div class="appointtabcell days">
-            <span>Wednesday</span>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="From" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="To" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-       </div>
-       <div class="appointtable list-row">
-         <div class="appointtabcell chkbox">
-           <span class="unchkedbox"></span>
-         </div>
-          <div class="appointtabcell days">
-            <span>Thursday</span>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="From" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="To" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-       </div>
-       <div class="appointtable list-row">
-         <div class="appointtabcell chkbox">
-           <span class="unchkedbox"></span>
-         </div>
-          <div class="appointtabcell days">
-            <span>Friday</span>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="From" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="To" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-       </div>
-       <div class="appointtable list-row">
-         <div class="appointtabcell chkbox">
-           <span class="unchkedbox"></span>
-         </div>
-          <div class="appointtabcell days">
-            <span>Saturday</span>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="From" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="To" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-       </div>
-       <div class="appointtable list-row">
-         <div class="appointtabcell chkbox">
-           <span class="unchkedbox"></span>
-         </div>
-          <div class="appointtabcell days">
-            <span>Sunday</span>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="From" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-          <div class="appointtabcell">
-             <div class="dis-inbl fl fromtime">
-                 {{input placeholder="To" class="txt-input" }}
-             </div>
-             <div class="dis-inbl fl">
-                <div class="switch dis-inbl" {{action "switchbtn"}}>
-                   <span class="swap switcham">AM</span>
-                   <span class="swap">PM</span>
-                </div>
-
-
-             </div>
-          </div>
-       </div>
-     </div>
-
-   </div>
-</div>
