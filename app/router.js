@@ -8,10 +8,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('setup-wizard', function() {
-    this.route('1-binfo');
-    this.route('2-bhours');
-    this.route('3-service');
-    this.route('4-staff');
     this.route('setupwizard');
   });
 

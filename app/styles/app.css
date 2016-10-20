@@ -541,7 +541,6 @@ background-gradient: linear-gradient(to right,#d4a2e0, #d4a2e0, #fff, #fff, #fff
 	right: 13px;
 	top: 5px;
 	width: 5px;
-	transition:all 0.2s ease-in;
 }
 .steplinks li.modified {
 	color: #fff;
@@ -554,6 +553,7 @@ background-gradient: linear-gradient(to right,#d4a2e0, #d4a2e0, #fff, #fff, #fff
 	top: 0;
 	width: 8px;
 	border: 2px solid #ec677e;
+	transition: all ease 0.1s;
 }
 .steplinks li::after {
 	background-color: rgba(255,255,255,0.1);
@@ -563,7 +563,6 @@ background-gradient: linear-gradient(to right,#d4a2e0, #d4a2e0, #fff, #fff, #fff
 	right: 15px;
 	top: 15px;
 	width: 1px;
-	transition:all 0.2s ease-in;
 }
 .steplinks li:last-child::after {
 	display: none;
@@ -761,20 +760,14 @@ select:focus {
 	padding: 10px 0;
 	width: 100%;
 }
-.tables.border-light {
-	padding: 25px 0px;
-	background-color: #fff;
-	margin-bottom: 20px;
-}
 .tables.border-light.tablestyle {
-	box-shadow: 0 12px 40px -6px rgba(227,232,242,0.4);
-	border: 1px solid rgba(240,244,245,0.68);
+	border-bottom: 1px solid #ededed;
 	padding:25px 20px;
 }
 .tabheading{
-    font-size:15px;
-	 color: #000;
-    font-family: libre_franklinregular;
+	font-size:15px;
+	color: #000;
+	font-family: libre_franklinregular;
 }
 .tab-row {
 	display: table-row;
@@ -830,6 +823,10 @@ select:focus {
 }
 .uploadimage > img {
 	margin-top: -6px;
+}
+.staff-container{
+	border: 1px solid #ededed;
+	box-shadow: 0 12px 40px -6px rgba(0,0,0,0.1);
 }
 .staffdetail {
 	margin: 0px 0 10px 20px;
@@ -922,11 +919,11 @@ appointtable.unchk {
 .apply {
 	border-bottom: 1px solid #333;
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 11px;
 	padding-bottom: 3px;
 	position: absolute;
-	right: 0;
-	top: 70px;
+	right: 20px;
+	top: 80px;
 }
 .switch {
 	cursor: pointer;
@@ -992,6 +989,9 @@ appointtable.unchk {
 transform: scaleX(1) translateX(100px);
 }
 }
+.newstaff-container{
+	background: #f9f9f9;
+}
 .staff-role {
 	display: block;
 	font-family: libre_franklinregular;
@@ -1033,6 +1033,7 @@ transform: scaleX(1) translateX(100px);
 	display: none;
 }
 .assigned-services {
+	font-size: 13px;
 	padding: 5px 0;
 }
 .assigned-services .service {
@@ -1064,7 +1065,7 @@ transform: scaleX(1) translateX(100px);
 		  display:flex;
 	 }
 	 .chkboxContent{
-		 margin-left:15px;
+		 padding-left:15px;
 	 }
 	 .checkbox{
 	-moz-user-select: none;
