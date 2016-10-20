@@ -23,6 +23,9 @@ export default Ember.Route.extend({
                $('.steplinks li').addClass('modified');
             }
           }
+         var index =$(".tabcontainer.active").index() + 1;
+
+        $(".steps").html("<span>Step " + index  + " of 4</span>");
         },
 
         urlGenerate: function(e){
@@ -37,7 +40,9 @@ export default Ember.Route.extend({
              $('.tabcontainer').removeClass('active');
              $("#"+findloc).addClass('active');
           });
+          var index =$(".tabcontainer.active").index() + 1;
 
+          $(".steps").html("<span>Step " + index  + " of 4</span>");
         },
         addService : function(){
            var $serName = $("#serviceName").val();

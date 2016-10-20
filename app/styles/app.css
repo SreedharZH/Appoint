@@ -1061,7 +1061,7 @@ transform: scaleX(1) translateX(100px);
 /*checkbox*/
 .labels-container{
 	    padding:7px 0;
-		display:flex;
+		  display:flex;
 	 }
 	 .chkboxContent{
 		 margin-left:15px;
