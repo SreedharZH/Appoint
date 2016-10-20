@@ -6,7 +6,15 @@ Ember.run.scheduleOnce('afterRender', this, function() {
 
 
 export default Ember.Route.extend({
+
+
   actions: {
+       loader :function(){
+         alert('ss');
+         $(".stepstitle").fadeIn(300, function () {
+				$(".setup-container").fadeIn(500);
+            });
+       },
         nextStep: function(){
           if(!($('.tabcontainer.active').last().index()==($('.tabcontainer').length-1))){
             $('.tabcontainer.active').removeClass('active').next().addClass('active');
@@ -24,9 +32,9 @@ export default Ember.Route.extend({
         },
 
         pressed: function() {
-            $(".steplinks li").click(function(){
+            $(".steplinks li.modified").click(function(){
             var findloc = $(this).data('tab');
-            $('.steplinks li').removeClass('active');
+            $('.steplinks li.modified').removeClass('active');
             $(this).addClass('active');
              $('.tabcontainer').removeClass('active');
              $("#"+findloc).addClass('active');

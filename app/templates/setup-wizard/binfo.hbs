@@ -1,9 +1,10 @@
 <div id="businessinfo" class="tabcontainer active">
-<div class="stepstitle">
-   <span class="number boxsize">1</span>
-   <span class="name boxsize dispinl">Business Info</span>
 
- </div>
+            <div class="stepstitle"> <span class="number boxsize fl"></span> <span class="name boxsize dis-inbl">Business Info
+              <span class="caption dis-block">Fill your basic business details.  You can fill the advanced details in setup page later.</span>
+            </span>
+
+            </div>
 <div class="setup-container boxsize">
      <div class="forms over">
         <span class="labelname dispinl fl">
@@ -12,15 +13,17 @@
          <span class="inputbox dispinl fl">
                {{input key-up='urlGenerate' type="text" placeholder="" class="txt-input" value=bname }}
           </span>
+          <div class="clearfix"></div>
       </div>
               <div class="forms over">
                   <span class="labelname dispinl fl">
                      <label>Business URL</label>
                   </span>
-                  <span class="inputbox dispinl fl">
-                    <span class="urlname dispinl fl">http://zoho.com/appointment/</span>
+                  <span class="inputbox url dispinl fl">
+
                       <input  type="text" placeholder="" class="txt-input-url" value={{bname}} />
                   </span>
+                  <div class="clearfix"></div>
                  </div>
                  <div class="forms over">
                     <span class="labelname dispinl fl">
@@ -30,6 +33,7 @@
 
                            <input type="text" placeholder="" class="txt-input"/>
                       </span>
+                      <div class="clearfix"></div>
                     </div>
                     <div class="forms over">
                        <span class="labelname dispinl fl">
@@ -40,6 +44,7 @@
                           <input type="text" placeholder="" class="txt-input"/>
 
                          </span>
+                         <div class="clearfix"></div>
                        </div>
      </div>
 

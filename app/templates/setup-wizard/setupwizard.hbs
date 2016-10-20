@@ -1,51 +1,41 @@
-<div class="appoint-grid over">
-    <div class="row">
+
        <div class="container pos-abs">
-           <div class="col-left dis-inbl fl boxsize">
-              <div class="logo">
-                <a href="javascript:void(0);" class="dis-inbl">
-                 <span class="logoimg dis-inbl"></span>
-                 <span class="logoname dis-inbl"> Appointment</span>
-                </a>
-              </div>
-              <div class="setup-title">
-                  <p class="welcome-name">Welcome <span class="user-name">Wilson!</span></p>
-                  <p class="welcome-name">
-                     To start getting appointments,
-                  </p>
-                  <h2 class="setup-name">
-                      <span class="grd1">Setup your</span>
-                      <span class="grd2">business</span>
-                  </h2>
-                <div class="bottomNavigate">
-                  <ul class="steplinks" {{action "pressed"}}>
-                     <li data-tab="businessinfo" class="active">Business Info</li>
-                     <li data-tab="businesshours">Business Hours</li>
-                     <li data-tab="addservice">Add Services</li>
-                     <li data-tab="addstaff">Add Staffs</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="zlogo"><img src="/images/zlogo.png" alt="zohologo"/></div>
-           </div>
+         <div class="col-left dis-inbl fl boxsize">
+         <div class="logo"> <a href="javascript:void(0);" class="dis-inbl"> <span class="logoimg dis-inbl"></span> <span class="logoname dis-inbl"> Appointment</span> </a> </div>
+         <div  class="setup-title over">
+            <div class="welcomenotes">
+              <p class="welcome-name">Welcome <span class="user-name">Wilson!</span></p>
+                   <p class="welcome-name">
+                      To start getting appointments,
+                   </p>
+           <h2 class="setup-name"> <span class="grd1">Setup your</span> <span class="grd2">business</span> </h2>
+            </div>
+            <div class="bottomNavigate">
+                   <ul class="steplinks" {{action "pressed"}}>
+                      <li data-tab="businessinfo" class="active">Business Info</li>
+                      <li data-tab="businesshours">Business Hours</li>
+                      <li data-tab="addservice">Add Services</li>
+                      <li data-tab="addstaff">Add Staffs</li>
+                   </ul>
+                 </div>
+                   <div class="zlogo"><img src="/images/zlogo.png" alt="zohologo"/></div>
+         </div>
+       </div>
            <div class="col-middle dis-inbl fl boxsize">
                  {{partial 'setup-wizard/binfo'}}
                  {{partial 'setup-wizard/bhours'}}
                   {{partial 'setup-wizard/service'}}
                   {{partial 'setup-wizard/staff'}}
-                  <div {{action 'nextStep'}} class="btn-nxt boxsize fr">
-                     <button class="btnstyle dis-inbl"></button>
+                  <div class="steps">
+                      <span>Step 1 of 4</span>
                   </div>
+
+                    <div {{action 'nextStep'}} class="btn-nxt boxsize">
+                      <button class="btnstyle dis-inbl"> Next </button>
+                    </div>
+
            </div>
-           <!-- <div class="col-right dis-inbl fl boxsize">
-              <ul class="steplinks" {{action "pressed"}}>
-                 <li data-tab="businessinfo" class="active">Business Info</li>
-                 <li data-tab="businesshours">Business Hours</li>
-                 <li data-tab="addservice">Add Services</li>
-                 <li data-tab="addstaff">Add Staffs</li>
-              </ul>
-          </div> -->
+
        </div>
-    </div>
-</div>
+
 {{outlet}}
