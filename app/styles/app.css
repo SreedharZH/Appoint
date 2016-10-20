@@ -1058,3 +1058,141 @@ transform: scaleX(1) translateX(100px);
 #fade-content, .setup-container, .stepstitle {
   /*display: none;*/
 }
+/*checkbox*/
+.labels-container{
+	    padding:7px 0;
+		display:flex;
+	 }
+	 .chkboxContent{
+		 margin-left:15px;
+	 }
+	 .checkbox{
+	-moz-user-select: none;
+	border: 9px solid #605798;
+    border-radius: 2px;
+    box-sizing: content-box;
+    cursor: pointer;
+    display: inline-block;
+    max-height: 0;
+    max-width: 0;
+    outline: medium none;
+    overflow: visible;
+    position: relative;
+    transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    vertical-align: middle;
+    z-index: 0;
+	 }
+
+	 .exportink{
+	background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    height: 20px;
+    left: -10px;
+    opacity: 0;
+    outline: 0.1px solid transparent;
+    pointer-events: none;
+    position: absolute;
+    top: -10px;
+    transform: scale(2.5);
+    transition: opacity 0.15s ease 0s;
+    width: 20px;
+    z-index: -1;
+	display:none;
+	 }
+	 .exportinkinnerbox{
+	border: 8px solid white;
+    left: -8px;
+    position: absolute;
+    top: -8px;
+    transition-delay: 0.15s;
+    transition-duration: 0.1s;
+    transition-property: transform, border-radius;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	 }
+	.chkbox-inner{
+	animation: 0.2s ease 0.1s normal forwards 1 running quantumWizPaperAnimateCheckMarkOut;
+    clip: rect(0px, 20px, 20px, 0px);
+    height: 20px;
+    left: -10px;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+	 }
+	 .chkboxmarker{
+	   height: 100%;
+    left: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 7px;
+    transform: rotate(-45deg);
+    transform-origin: 0 50% 0;
+    width: 100%
+	 }
+	 .tickmark{
+	       border: 1px solid #fff;
+    height: 3px;
+    left: 0;
+	top:1px;
+    position: absolute;
+	 }
+	 .ticklarge{
+	   border: 1px solid #fff;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+	 }
+	 .checkbox.isChecked:not(.isDisabled) {
+    border-color: #605798;
+}
+
+[aria-checked="true"] > .exportinkinnerbox {
+    border-radius: 100%;
+    transform: scale(0);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+[aria-checked="true"] > .exportink{
+     background-color: rgba(61, 143, 45, 0.15);
+	 animation:0.3s ease 0.1s normal forwards 1 running animateCircle;
+}
+[aria-checked="false"] > .exportink{
+
+	 animation:0.3s ease 0.1s normal forwards 1 running animateCircleOuter;
+}
+[aria-checked="true"] > .chkbox-inner {
+    animation: 0.2s ease 0.1s normal forwards 1 running quantumWizPaperAnimateCheckMarkIn;
+    clip: rect(0px, 20px, 20px, 20px);
+}
+ @keyframes animateCircleOuter {
+0% {
+    opacity:1
+}
+100% {
+   opacity:0;
+}
+}
+ @keyframes animateCircle {
+0% {
+    opacity:1
+}
+100% {
+   opacity:0;
+}
+}
+	 @keyframes quantumWizPaperAnimateCheckMarkIn {
+0% {
+    clip: rect(0px, 0px, 20px, 0px);
+}
+100% {
+    clip: rect(0px, 20px, 20px, 0px);
+}
+}
+@keyframes quantumWizPaperAnimateCheckMarkOut {
+0% {
+    clip: rect(0px, 20px, 20px, 0px);
+}
+100% {
+    clip: rect(0px, 20px, 20px, 20px);
+}
+}
+/*checkbox*/
