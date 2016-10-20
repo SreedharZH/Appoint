@@ -38,7 +38,7 @@ export default Ember.Controller.extend({
              var $serName = $("#serviceName").val();
              var $serTime = $("#serTime").val();
              var $serCost =$("#serCost").val();
-             var markup = "<div class='tables border-light'><div class='tablecell'><span>" + $serName + "</span></div><div class='tablecell'><span>" + $serTime + " Mins </span></div><div class='tablecell'><span>" + $serCost + "cost </span></div></div>";
+             var markup = "<div class='tables border-light'><div class='tablecell'><span class='tabdetails'>" + $serName + "</span></div><div class='tablecell'><span class='tabdetails'>" + $serTime + "  </span></div><div class='tablecell'><span class='tabdetails'>" + $serCost + " </span></div></div>";
              $("input[type=text], textarea").val("");
              $(".list-pages").append(markup);
              $(".addServiceEnable").css('display','none');

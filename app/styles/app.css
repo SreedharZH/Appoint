@@ -284,6 +284,12 @@ button {
 .text-center {
 	text-align: center !important;
 }
+.text-upper{
+  text-transform: uppercase !important;
+}
+.text-lower{
+  text-transform: lowercase; !important;
+}
 .mt80 {
 	margin-top: 80px;
 }
@@ -767,9 +773,9 @@ select:focus {
   color: #333; display: inline-block; font-size: 14px; padding: 10px 0;
 }
 .tabheading{
-	font-size:15px;
-	color: #000;
-	font-family: libre_franklinregular;
+	font-size:13px;
+	color: #666;
+	font-family: libre_franklinmedium;
 }
 .tab-row {
 	display: table-row;
@@ -786,8 +792,8 @@ select:focus {
 }
 
 .mins {
-	font-size: 13px;
-	padding: 13px 10px;
+	font-size: 11px;
+  margin-left: 3px;
 }
 .addService, .cancelService {
 	background: #52518F;
