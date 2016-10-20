@@ -42,7 +42,8 @@ export default Ember.Route.extend({
         addService : function(){
            var $serName = $("#serviceName").val();
            var $serTime = $("#serTime").val();
-           var markup = "<div class='tables border-light'><div class='tablecell'><span>" + $serName + "</span></div><div class='tablecell'><span>" + $serTime + " Mins </span></div></div>";
+           var $serCost =$("#serCost").val();
+           var markup = "<div class='tables border-light'><div class='tablecell'><span>" + $serName + "</span></div><div class='tablecell'><span>" + $serTime + " Mins </span></div><div class='tablecell'><span>" + $serCost + "cost </span></div></div>";
            $("input[type=text], textarea").val("");
            $(".list-pages").append(markup);
            $(".addServiceEnable").css('display','none');
