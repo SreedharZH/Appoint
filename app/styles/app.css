@@ -397,6 +397,7 @@ button {
 	padding: 40px 20px 20px 30px;
 	position: fixed;
 	width: 42%;
+  min-width:420px;
 	/*background: rgba(131,77,139,1);
 background: -moz-linear-gradient(top, rgba(131,77,139,1) 0%, rgba(82,81,143,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(131,77,139,1)), color-stop(100%, rgba(82,81,143,1)));
@@ -656,7 +657,7 @@ background-gradient: linear-gradient(to right,#d4a2e0, #d4a2e0, #fff, #fff, #fff
 	color: #000000;
 	display: inline-block;
 	font-family: libre_franklinregular;
-	font-size: 12px;
+	font-size: 15px;
 	padding: 12px 10px;
 	width: 100%;
 	border-radius: 5px;
@@ -915,7 +916,7 @@ appointtable.unchk {
 }
 .txttime {
 	color: #888;
-	font-family: libre_franklinmedium;
+
 	font-size: 13px;
 }
 .apply {
@@ -938,6 +939,7 @@ appointtable.unchk {
 	width: 49px;
 	box-sizing: border-box;
 	border-left: 0px;
+  color:#888;
 }
 .swap {
 	display: none;
@@ -1045,17 +1047,7 @@ transform: scaleX(1) translateX(100px);
 	padding: 8px 12px 8px 12px;
 	position: relative;
 }
-/*.assigned-services .service::before {
-	background: url("/images/activearrow.png") 0px 0 no-repeat scroll rgba(0, 0, 0, 0);
-	content: "";
-	display: inline-block;
-	height: 9px;
-	left: 10px;
-	opacity: 0.5;
-	position: absolute;
-	top: 10px;
-	width: 13px;
-}*/
+
 .assigned-services .service.active::before {
 	opacity: 1;
 }

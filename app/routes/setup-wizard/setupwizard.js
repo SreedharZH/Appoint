@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 Ember.run.scheduleOnce('afterRender', this, function() {
   Ember.$('.header').hide();
+ //  $(".stepstitle").fadeIn(300, function () {
+ // $(".setup-container").fadeIn(500);
+ //     });
 });
 
 
@@ -9,12 +12,7 @@ export default Ember.Route.extend({
 
 
   actions: {
-       loader :function(){
-         alert('ss');
-         $(".stepstitle").fadeIn(300, function () {
-				$(".setup-container").fadeIn(500);
-            });
-       },
+
         nextStep: function(){
           if(!($('.tabcontainer.active').last().index()==($('.tabcontainer').length-1))){
             $('.tabcontainer.active').removeClass('active').next().addClass('active');
