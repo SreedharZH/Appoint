@@ -606,10 +606,10 @@ background-gradient: linear-gradient(to right,#d4a2e0, #d4a2e0, #fff, #fff, #fff
 	display: inline-block;
 	font-family: libre_franklinlight;
 	font-size: 18px;
-	height: 32px;
+	height: 43px;
 	padding: 7px;
 	text-align: center;
-	width: 36px;
+	width: 43px;
 	line-height: normal;
 	background: url(/images/infoicon.png) no-repeat;
 	margin-top: 15px;
@@ -773,11 +773,15 @@ select:focus {
 	padding: 10px 0;
 	width: 100%;
 }
-.tables.border-light.tablestyle {
+.tables.border-light.tablestyle,.tables.servicetable {
 	border: 1px solid #efefef;
 	padding:15px 20px;
 	/*box-shadow:0 12px 40px -6px rgba(227, 232, 242, 0.4);*/
 }
+.tables.servicetable{
+	padding:15px 0px 15px 10px;
+}
+
 .addServiceEnable{
   padding: 20px 0;
 }
@@ -795,6 +799,7 @@ select:focus {
 .tablecell {
 	display: table-cell;
 	width: 33%;
+	position: relative;
 }
 .tables.border-light.tablestyle .tablecell{
    width:50%;
@@ -802,7 +807,27 @@ select:focus {
 .servicesDetail{
 	width:30% !important;
 }
+.icons{
 
+	position: absolute;
+    right: 10px;
+    top: 10px;
+}
+span.editicon,span.deleteicon{
+ width:16px;
+ height:16px;
+ background:url(/images/editicon.png) no-repeat;
+ background-size: 100%;
+ display:inline-block;
+ float:left;
+ margin-right: 10px;
+ opacity:0.8;
+ cursor:pointer;
+}
+span.deleteicon{
+ background:url(/images/deleteicon.png) no-repeat;
+ background-size:100%;
+}
 .mins {
 	font-size: 11px;
   margin-left: 3px;
@@ -812,7 +837,7 @@ select:focus {
 	border-radius: 2px;
 	color: #FFFFFF;
 	font-size: 13px;
-	padding: 10px;
+	padding: 6px 10px;
 }
 .cancelService {
 	background: transparent;

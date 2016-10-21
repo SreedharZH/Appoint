@@ -21,6 +21,7 @@ export default Ember.Controller.extend({
               }
               if($('.tabcontainer.active').last().index()==3){
                  $('.btn-nxt').find('button').text('Finish');
+                 $('.addnew-container').css('display','block');
               }
               else {
                 $('.btn-nxt').find('button').text('Next');
@@ -56,27 +57,37 @@ export default Ember.Controller.extend({
              var $serName = $("#serviceName").val();
              var $serTime = $("#serTime").val();
              var $serCost =$("#serCost").val();
-             var markup = "<div class='tables border-light'><div class='tablecell'><span class='tabdetails'>" + $serName + "</span></div><div class='tablecell'><span class='tabdetails'>" + $serTime + "  </span></div><div class='tablecell'><span class='tabdetails'>" + $serCost + " </span></div></div>";
+             var markup = "<div class='tables servicetable boxsize no-top-bottom'><div class='tablecell'><span class='tabdetails'>" + $serName + "</span></div><div class='tablecell'><span class='tabdetails'>" + $serTime + "  </span></div><div class='tablecell'><span class='tabdetails'>" + $serCost + " </span><div class='icons'><span class='editicon'></span><span class='deleteicon'></span></div></div>";
              $("input[type=text], textarea").val("");
              $(".list-pages").append(markup);
-             $(".addServiceEnable").css('display','none');
+             $(".addnew-container").css('display','none');
              $('.addplus').removeClass('hide-imp');
              $('.service-list').removeClass('hide-imp');
           },
           addAction :function(){
              $('.addplus').addClass('hide-imp');
-             $(".addServiceEnable").css('display','block');
+             $(".addnew-container").css('display','block');
              $(".cancelService").removeClass('hide-imp');
           },
+
           cancelService :function(){
           $("input[type=text], textarea").val("");
-          $(".addServiceEnable").css('display','none');
+          $(".addnew-container").css('display','none');
           $('.addplus').removeClass('hide-imp');
         },
+        editicon : function(){
+          alert('ss');
 
+
+        },
 
 
       }
 
 
+});
+
+$(".editicon").click(function(){
+
+$('.tables.servicetable').append('.addnew-container');
 });

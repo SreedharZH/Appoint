@@ -13,7 +13,11 @@
              <div class="tablecell"> <span class="tabheading">Duration<span class="mins">(mins)</span></span> </div>
              <div class="tablecell"> <span class="tabheading">Cost<span class="mins text-upper">(INR)</span></span></div>
            </div>
-           <div class="list-pages"> </div>
+           <div class="list-pages">
+           </div>
+           <div class="table-row">
+             <a href="javascript:void(0);" class="addplus hide-imp" {{action "addAction"}}>+ Add Service</a>
+           </div>
            <div class="addnew-container mt20 pad-30">
              <div class=" mb20 dis-inbl">
                <div class="">
@@ -59,7 +63,7 @@
                <span class="inputbox dis-inbl fl">
                  <div class="tab-row">
                      <a href="javascript:void(0);" class="addService dis-inbl boxsize" {{action "addService"}}> Add Service</a>
-                     <a href="javascript:void(0);" class="cancelService dis-inbl boxsize hide-imp"  {{action "cancelService"}}>Cancel</a>
+                     <a href="javascript:void(0);" class="cancelService boxsize hide-imp"  {{action "cancelService"}}>Cancel</a>
                  </div>
                 </span>
                 <div class="clearfix"></div>
