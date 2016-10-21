@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 
     actions: {
-
           nextStep: function(){
             if(!($('.tabcontainer.active').last().index()==($('.tabcontainer').length-1))){
               $('.tabcontainer.active').removeClass('active').next().addClass('active');
@@ -13,10 +12,16 @@ export default Ember.Controller.extend({
               if($('.tabcontainer.active').last().index()==3){
                  $('.steplinks li').addClass('modified');
               }
+              if($('.tabcontainer.active').last().index()==3){
+                 $('.btn-nxt').find('button').text('Finish');
+              }
+              else {
+                $('.btn-nxt').find('button').text('Next');
+              }
             }
            var index =$(".tabcontainer.active").index() + 1;
+           $(".steps").html("<span>Step &nbsp;" + index  + " of 4</span>");
 
-          $(".steps").html("<span>Step &nbsp;" + index  + " of 4</span>");
           },
 
 
@@ -27,10 +32,16 @@ export default Ember.Controller.extend({
               $(this).addClass('active');
                $('.tabcontainer').removeClass('active');
                $("#"+findloc).addClass('active');
+               if($('.tabcontainer.active').last().index()==3){
+                  $('.btn-nxt').find('button').text('Finish');
+               }
+               else {
+                 $('.btn-nxt').find('button').text('Next');
+               }
             });
             var index =$(".tabcontainer.active").index() + 1;
-
             $(".steps").html("<span>Step &nbsp;" + index  + " of 4</span>");
+
           },
 
 
@@ -43,6 +54,7 @@ export default Ember.Controller.extend({
              $(".list-pages").append(markup);
              $(".addServiceEnable").css('display','none');
              $('.addplus').removeClass('hide-imp');
+             $('.service-list').removeClass('hide-imp');
           },
           addAction :function(){
              $('.addplus').addClass('hide-imp');

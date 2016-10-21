@@ -5,6 +5,7 @@ Ember.run.scheduleOnce('afterRender', this, function() {
      $(".stepstitle").fadeIn(300, function () {
      $(".setup-container").fadeIn(500);
    });
+   
 });
 
 

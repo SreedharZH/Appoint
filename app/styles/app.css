@@ -185,9 +185,6 @@ body {
 .over-auto {
 	overflow: auto !important;
 }
-.full-width {
-	width: 100% !important;
-}
 .full-height {
 	height: 100%;
 }
@@ -237,7 +234,7 @@ button {
 	padding: 15px !important;
 }
 .pad-20 {
-	padding: 20px;
+	padding: 20px !important;
 }
 .pad-30 {
 	padding: 30px !important;
@@ -290,26 +287,38 @@ button {
 .text-lower{
   text-transform: lowercase; !important;
 }
-.mt80 {
-	margin-top: 80px;
-}
-.mb20 {
-	margin-bottom: 20px;
-}
-.mt40 {
-	margin-top: 80px;
+.mt10{
+	margin-top: 10px;
 }
 .mt20 {
 	margin-top: 20px;
 }
-.mb20 {
-	margin-bottom: 20px;
+.mt40 {
+	margin-top: 80px;
+}
+.mt80 {
+	margin-top: 80px;
 }
 .mb10 {
 	margin-bottom: 10px;
 }
+.mb20 {
+	margin-bottom: 20px;
+}
+.no-top-bottom {
+	border-top: none !important;
+}
 .no-border-bottom {
 	border-bottom: none !important;
+}
+.full-width {
+	width: 100% !important;
+}
+.half-width{
+	width: 50% !important;
+}
+.width-30{
+	width:30% !important;
 }
 .row {
 	height: 100%;
@@ -645,11 +654,14 @@ background-gradient: linear-gradient(to right,#d4a2e0, #d4a2e0, #fff, #fff, #fff
 	position: relative;
 	transition: all 0.2s ease-in;
 }
-.inputbox-number {
-	width: 30%;
+.phone-number.txt-input{
+	width: 80%;
+	max-width: 200px;
 }
-.inputbox.time {
-	width: 30%;
+.phone-code.txt-input{
+	width: 20%;
+	margin-right:20px;
+	max-width: 100px;
 }
 .txt-input, .txt-input-url {
 	border: 2px solid #f1f1f1;
@@ -762,9 +774,9 @@ select:focus {
 	width: 100%;
 }
 .tables.border-light.tablestyle {
-	border: 1px solid #f3f6f7;
+	border: 1px solid #efefef;
 	padding:15px 20px;
-	box-shadow:0 12px 40px -6px rgba(227, 232, 242, 0.4);
+	/*box-shadow:0 12px 40px -6px rgba(227, 232, 242, 0.4);*/
 }
 .addServiceEnable{
   padding: 20px 0;
@@ -800,7 +812,6 @@ select:focus {
 	border-radius: 2px;
 	color: #FFFFFF;
 	font-size: 13px;
-	margin: 30px 0 0;
 	padding: 10px;
 }
 .cancelService {
@@ -1002,11 +1013,10 @@ appointtable.unchk {
 transform: scaleX(1) translateX(100px);
 }
 }
-.newstaff-container{
+.addnew-container{
 	background: #fcfdfe;
 	border: 1px dashed #d9d8ee;
-    border-radius: 5px;
-		margin-top:50px;
+  border-radius: 5px;
 }
 .staff-role {
 	display: block;
@@ -1217,6 +1227,9 @@ transform: scaleX(1) translateX(100px);
 /*selectbox*/
 .selectbox{
   width: 60%;
+}
+.country-select{
+	width: 50%;
 }
 .selectbox:after{
   background: rgba(0, 0, 0, 0) url("/images/dwn.png") no-repeat scroll 0 0;
