@@ -1,8 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-
+ isAm:true,
     actions: {
+       switchampm: function(){
+         this.toggleProperty('isAm');
+       },
+      applyToAll: function(){
+        $('.appointtable.list-row').find('.fromtime').find('.select2-selection__rendered').text($('.appointtable.list-row').eq(1).find('.fromtime').find('.select2-selection__rendered').text());
+          $('.appointtable.list-row').find('.totime').find('.select2-selection__rendered').text($('.appointtable.list-row').eq(1).find('.totime').find('.select2-selection__rendered').text());
+      },
           nextStep: function(){
             if(!($('.tabcontainer.active').last().index()==($('.tabcontainer').length-1))){
               $('.tabcontainer.active').removeClass('active').next().addClass('active');
@@ -68,14 +75,7 @@ export default Ember.Controller.extend({
         },
 
 
-         switchbtn : function(){
-           var $mark = this.children('.swap').text();
-           alert($mark);
-           if($mark.hasClass('showele')){
-               $(".swap.switcham").removeClass('showele');
-               $(".swap.switchpm").addClass('showele');
-           }
-        }
+
       }
 
 

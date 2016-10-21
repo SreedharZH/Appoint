@@ -5,7 +5,12 @@ Ember.run.scheduleOnce('afterRender', this, function() {
      $(".stepstitle").fadeIn(300, function () {
      $(".setup-container").fadeIn(500);
    });
-   
+   $('#autocountryselect').select2({
+       minimumResultsForSearch: Infinity
+   });
+   $(".selecttime").select2({
+      minimumResultsForSearch: Infinity
+   })
 });
 
 
