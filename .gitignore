@@ -5,7 +5,6 @@
 /node_modules
 /tests
 /tmp
-
 /testem.js
 /code
 /app%copy
