@@ -19,11 +19,6 @@
                    </ul>
                  </div>
               <div class="zlogo"><img src="/images/zlogo.png" alt="zohologo"/></div>
-              <div {{bind-attr class="isUrgent"}}>
-                Warning!
-              </div>
-
-
          </div>
        </div>
            <div class="col-middle dis-inbl fl boxsize">
@@ -35,9 +30,13 @@
                       <span>Step &nbsp; 1 of 4</span>
                   </div>
 
-                    <div {{action 'nextStep'}} class="btn-nxt boxsize">
-                      <button class="btnstyle dis-inbl"> Next </button>
-                    </div>
+                  <div {{action 'backStep'}} class="btn-back hide boxsize">
+                    <button class="backbtn dis-inbl"> </button>
+                  </div>
+
+                  <div {{action 'nextStep'}} class="btn-nxt boxsize">
+                    <button class="btnstyle dis-inbl"> Next </button>
+                  </div>
 
            </div>
 

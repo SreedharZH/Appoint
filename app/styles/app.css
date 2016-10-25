@@ -737,7 +737,7 @@ select:focus {
 }
 .btn-nxt {
 	background: #52518f;
-	bottom: 0px;
+	bottom: 0;
 	height: 62px;
 	padding: 3px;
 	position: absolute;
@@ -745,8 +745,10 @@ select:focus {
 	width: 250px;
 	z-index: 9;
 }
-.btn-nxt:hover {
-/*background:linear-gradient(to left bottom, #52518F 0%, #A44A87 100%);*/
+.btn-back {
+	position: absolute;
+	right:260px;
+	bottom:20px;
 }
 .btnstyle {
 	background: #52518f;
@@ -767,6 +769,18 @@ select:focus {
 	margin: auto;
 	width: 28px;
 	float: right;
+}
+.backbtn{
+	background: #fff;
+	cursor: pointer;
+}
+.backbtn::after{
+	content: "<";
+	display: inline-block;
+	height: 20px;
+	margin: auto;
+	width: 28px;
+	font-size: 15px;
 }
 .tables {
 	border-bottom: 1px solid #F1F1F1;
