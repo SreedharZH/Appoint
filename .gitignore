@@ -5,7 +5,7 @@
 /node_modules
 /tests
 /tmp
-/vendor
+
 /testem.js
 /code
 /app%copy

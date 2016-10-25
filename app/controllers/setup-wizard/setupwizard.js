@@ -4,13 +4,20 @@ export default Ember.Controller.extend({
  isAm:true,
     actions: {
        switchampm: function(){
-         this.toggleProperty('isAm');
+        //  this.toggleProperty('isAm');
+
+
+      //  Ember.$(this).addClass('hide-imp');
+        Ember.run.later(function() {
+          Ember.this.addClass('hide-imp');
+        });
        },
       applyToAll: function(){
         $('.appointtable.list-row').find('.fromtime').find('.select2-selection__rendered').text($('.appointtable.list-row').eq(1).find('.fromtime').find('.select2-selection__rendered').text());
-          $('.appointtable.list-row').find('.totime').find('.select2-selection__rendered').text($('.appointtable.list-row').eq(1).find('.totime').find('.select2-selection__rendered').text());
+        $('.appointtable.list-row').find('.totime').find('.select2-selection__rendered').text($('.appointtable.list-row').eq(1).find('.totime').find('.select2-selection__rendered').text());
       },
-          nextStep: function(){
+
+      nextStep: function(){
             if(!($('.tabcontainer.active').last().index()==($('.tabcontainer').length-1))){
               $('.tabcontainer.active').removeClass('active').next().addClass('active');
 
@@ -57,7 +64,7 @@ export default Ember.Controller.extend({
              var $serName = $("#serviceName").val();
              var $serTime = $("#serTime").val();
              var $serCost =$("#serCost").val();
-             var markup = "<div class='tables servicetable boxsize no-top-bottom'><div class='tablecell'><span class='tabdetails'>" + $serName + "</span></div><div class='tablecell'><span class='tabdetails'>" + $serTime + "  </span></div><div class='tablecell'><span class='tabdetails'>" + $serCost + " </span><div class='icons'><span class='editicon'></span><span class='deleteicon'></span></div></div>";
+             var markup = "<div class='tables servicetable boxsize no-top-bottom'><div class='tablecell'><span class='tabdetails'>" + $serName + "</span></div><div class='tablecell'><span class='tabdetails'>" + $serTime + "  </span></div><div class='tablecell'><span class='tabdetails'>" + $serCost + " </span><div class='icons'><span class='editicon' onclick='editfunction()'></span><span class='deleteicon'></span></div></div>";
              $("input[type=text], textarea").val("");
              $(".list-pages").append(markup);
              $(".addnew-container").css('display','none');
@@ -86,8 +93,6 @@ export default Ember.Controller.extend({
 
 
 });
-
-$(".editicon").click(function(){
-
-$('.tables.servicetable').append('.addnew-container');
-});
+function editfunction(){
+  alert();
+}

@@ -613,6 +613,7 @@ background-gradient: linear-gradient(to right,#d4a2e0, #d4a2e0, #fff, #fff, #fff
 	line-height: normal;
 	background: url(/images/infoicon.png) no-repeat;
 	margin-top: 15px;
+	opacity:0.4;
 }
 .number.bhours {
 	background: url(/images/business-hours.png) no-repeat;
