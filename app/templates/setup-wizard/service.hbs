@@ -1,73 +1,50 @@
 <div id="addservice" class="tabcontainer">
+<div class="stepstitle">
+   <span class="number boxsize">3</span>
+   <span class="name boxsize dispinl">Add Service</span>
 
-         <div class="stepstitle slide-up-slow">
-  <span class="number boxsize bservice"></span>
-  <span class="name boxsize dis-inbl">Add Service
-  <span class="caption dis-block">Fill your basic business details.  You can fill the advanced details in setup page later.</span>
-  </span>
+ </div>
+<div class="setup-container boxsize">
+   <div class="tables ">
+
+         <div class="tablecell">
+            Service Name
+         </div>
+         <div class="tablecell">
+            Duration
+         </div>
+    </div>
+    <div class="list-pages">
+
+    </div>
+    <div class="table-row">
+        <a href="javascript:void(0);" class="addplus hide" {{action "addAction"}}>+ Add Service</a>
+    </div>
+    <div class="tables border-light addServiceEnable">
+
+       <div class="tablecell">
+         <span class="inputbox dispinl fl">
+              {{input type="text" placeholder="Service name" class="txt-input" name="serviceName" id="serviceName" }}
+
+          </span>
+       </div>
+       <div class="tablecell">
+         <span class="inputbox dispinl fl time">
+               {{input placeholder="00" class="txt-input" name="serTime" id="serTime" }}
+          </span>
+
+          <span class="dispinl fl mins grey-color">mins</span>
+       </div>
+
+       <div class="tab-row">
+           <a href="javascript:void(0);" class="addService dispinl boxsize" {{action "addService"}}> Add Service</a>
+           <a href="javascript:void(0);" class="cancelService dispinl boxsize hide"  {{action "cancelService"}}>Cancel</a>
+       </div>
+    </div>
+
 
 </div>
-         <div class="setup-container boxsize slide-up">
-           <div class="tables hide-imp service-list">
-             <div class="tablecell"> <span class="tabheading">Service Name </span></div>
-             <div class="tablecell"> <span class="tabheading">Duration<span class="mins">(mins)</span></span> </div>
-             <div class="tablecell"> <span class="tabheading">Cost<span class="mins text-upper">(INR)</span></span></div>
-           </div>
-           <div class="list-pages">
-           </div>
-           <div class="table-row">
-             <a href="javascript:void(0);" class="addplus hide-imp" {{action "addAction"}}>+ Add Service</a>
-           </div>
-           <div class="addnew-container mt20 pad-30">
-             <div class=" mb20 dis-inbl">
-               <div class="">
-                 <span class="title-name">
-                      + New Service
-                 </span>
-               </div>
-
-             </div>
-             <div class="staffscol no-border-bottom boxsize">
-                  <span class="labelname dis-inbl fl">
-                      <label>Service Name</label>
-                  </span>
-                  <span class="inputbox dis-inbl fl">
-                        <input type="text" placeholder="" id="serviceName" class="txt-input"/>
-                  </span>
-               <div class="clearfix"></div>
-             </div>
-             <div class="staffscol no-border-bottom boxsize">
-                  <span class="labelname dis-inbl fl">
-                      <label>Duration</label>
-                  </span>
-                  <span class="inputbox dis-inbl fl">
-                        <input type="text" placeholder="" id="serTime" class="txt-input width-30"/>
-                        <span class="pad-15 font12 dis-inbl">mins</span>
-                  </span>
-               <div class="clearfix"></div>
-             </div>
-             <div class="staffscol no-border-bottom boxsize">
-                  <span class="labelname dis-inbl fl">
-                      <label>Cost</label>
-                  </span>
-                  <span class="inputbox dis-inbl fl">
-                        <input type="text" placeholder="" id="serCost" class="txt-input width-30"/>
-                        <span class="pad-15 font12 dis-inbl">INR</span>
-                  </span>
-               <div class="clearfix"></div>
-             </div>
-             <div class="staffscol no-border-bottom boxsize">
-               <span class="labelname dis-inbl fl">
-                   <label></label>
-               </span>
-               <span class="inputbox dis-inbl fl">
-                 <div class="tab-row">
-                     <a href="javascript:void(0);" class="addService dis-inbl boxsize" {{action "addService"}}> Add Service</a>
-                     <a href="javascript:void(0);" class="cancelService boxsize hide-imp"  {{action "cancelService"}}>Cancel</a>
-                 </div>
-                </span>
-                <div class="clearfix"></div>
-             </div>
-           </div>
-         </div>
-       </div>
+<div class="btn-nxt boxsize fr">
+    <button class="btnstyle dispinl"></button>
+</div>
+</div>

@@ -1,0 +1,865 @@
+<div id="businesshours" class="tabcontainer">
+  <div class="stepstitle slide-up-slow">
+  <span class="number boxsize bhours"></span>
+  <span class="name boxsize dis-inbl">Business Hours
+     <span class="caption dis-block">Fill your basic business details.  You can fill the advanced details in setup page later.</span>
+  </span>
+
+</div>
+<div class="setup-container boxsize slide-up" id="setup-container">
+   <div class="appointlist ">
+    <div class="apply" {{action 'applyToAll'}}>Apply to all</div>
+     <div class="appointtable list-row no-margin">
+       <div class="appointtabcell">
+         <label class="labels-container">
+
+         </label>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl mb10"> <span class="txttime">From</span></div>
+         <!-- <div class="dis-inbl fl">
+           <div class="switch dis-inbl" >  </div>
+         </div> -->
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl mb10"> <span class="txttime">To</span></div>
+         <!-- <div class="dis-inbl fl">
+           <div class="switch dis-inbl" >  </div>
+         </div> -->
+       </div>
+     </div>
+     <div class="appointtable list-row">
+       <div class="appointtabcell">
+         <label class="labels-container">
+           <div aria-checked="true" class="checkbox isChecked" {{action 'toggleDay'}}>
+             <div class="exportink"></div>
+              <div class="exportinkinnerbox"></div>
+               <div class="chkbox-inner">
+                 <div class="chkboxmarker">
+                    <div class="tickmark"></div>
+                    <div class="ticklarge"></div>
+                 </div>
+               </div>
+
+            </div>
+
+            <div class="appointtabcell chkboxContent ml20" ele="dayDiv" name="MONDAY">
+              Monday
+            </div>
+         </label>
+       </div>
+       <!-- <div class="appointtabcell days"> <span>Monday</span> </div> -->
+       <div class="appointtabcell">
+         <div class="dis-inbl fl fromtime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="MONDAY-FROM">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span>
+         </div>
+         <div class="dis-inbl fl fromTimeMeridiem">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+             <span class="swap switcham selected" name="AM">AM</span>
+             <span class="swap switchpm" name="PM">PM</span>
+           </div>
+
+         </div>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl totime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select class="selecttime inputbox url dispinl fl" id="MONDAY-TO">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl toTimeMeridiem">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+             <span class="swap switcham selected" name="AM">AM</span>
+             <span class="swap switchpm" name="PM">PM</span>
+           </div>
+
+         </div>
+       </div>
+     </div>
+     <div class="appointtable list-row">
+       <div class="appointtabcell">
+         <label class="labels-container">
+           <div aria-checked="true" class="checkbox isChecked" {{action 'toggleDay'}}>
+             <div class="exportink"></div>
+              <div class="exportinkinnerbox"></div>
+               <div class="chkbox-inner">
+                 <div class="chkboxmarker">
+                    <div class="tickmark"></div>
+                    <div class="ticklarge"></div>
+                 </div>
+               </div>
+
+            </div>
+
+            <div class="appointtabcell chkboxContent ml20" ele="dayDiv" name="TUESDAY">
+              Tuesday
+            </div>
+         </label>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl fromtime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="TUESDAY-FROM">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl fromTimeMeridiem">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+             <span class="swap switcham selected" name="AM">AM</span>
+             <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl totime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select class="selecttime inputbox url dispinl fl" id="TUESDAY-TO">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+             <span class="swap switcham selected" name="AM">AM</span>
+              <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+     </div>
+     <div class="appointtable list-row">
+       <div class="appointtabcell">
+         <label class="labels-container">
+           <div aria-checked="true" class="checkbox isChecked" {{action 'toggleDay'}}>
+             <div class="exportink"></div>
+              <div class="exportinkinnerbox"></div>
+               <div class="chkbox-inner">
+                 <div class="chkboxmarker">
+                    <div class="tickmark"></div>
+                    <div class="ticklarge"></div>
+                 </div>
+               </div>
+
+            </div>
+
+            <div class="appointtabcell chkboxContent ml20" ele="dayDiv" name="WEDNESDAY">
+              Wednesday
+            </div>
+         </label>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl fromtime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="WEDNESDAY-FROM">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl fromTimeMeridiem">
+           <div class="switch dis-inbl" {{action "switchampm"}}> <span class="swap switcham selected" name="AM">AM</span>
+             <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl totime"><span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="WEDNESDAY-TO">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span></div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}> <span class="swap switcham selected" name="AM">AM</span>
+             <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+     </div>
+     <div class="appointtable list-row">
+       <div class="appointtabcell">
+         <label class="labels-container">
+           <div aria-checked="true" class="checkbox isChecked" {{action 'toggleDay'}}>
+             <div class="exportink"></div>
+              <div class="exportinkinnerbox"></div>
+               <div class="chkbox-inner">
+                 <div class="chkboxmarker">
+                    <div class="tickmark"></div>
+                    <div class="ticklarge"></div>
+                 </div>
+               </div>
+
+            </div>
+
+            <div class="appointtabcell chkboxContent ml20" ele="dayDiv" name="THURSDAY">
+              Thursday
+            </div>
+         </label>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl fromtime">
+           <span class="selectbox choosetime fl pos-rel boxsize">
+                    <select class="selecttime inputbox url dispinl fl" id="THURSDAY-FROM">
+                      <option value="06:00">06:00</option>
+                      <option value="06:30">06:30</option>
+                      <option value="07:00">07:00</option>
+                      <option value="07:30">07:30</option>
+                      <option value="08:00">08:00</option>
+                      <option value="08:30">08:30</option>
+                      <option value="09:00">09:00</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:30</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:30</option>
+                      <option value="01:00">01:00</option>
+                      <option value="01:30">01:30</option>
+                      <option value="02:00">02:00</option>
+                      <option value="02:30">02:30</option>
+                      <option value="03:00">03:00</option>
+                      <option value="03:30">03:30</option>
+                      <option value="04:00">04:00</option>
+                      <option value="04:30">04:30</option>
+                      <option value="05:00">05:00</option>
+                      <option value="05:30">05:30</option>
+                      <option value="06:00">06:00</option>
+                      <option value="06:30">06:30</option>
+                      <option value="07:00">07:00</option>
+                      <option value="07:30">07:30</option>
+                      <option value="08:00">08:00</option>
+                      <option value="08:30">08:30</option>
+                      <option value="09:00">09:00</option>
+                      <option value="09:30">09:30</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:30</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:30</option>
+
+
+
+                    </select>
+         </span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+             <span class="swap switcham selected" name="AM">AM</span> <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl totime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="THURSDAY-TO">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+             <span class="swap switcham selected" name="AM">AM</span>
+              <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+     </div>
+     <div class="appointtable list-row">
+       <div class="appointtabcell">
+         <label class="labels-container">
+           <div aria-checked="true" class="checkbox isChecked" {{action 'toggleDay'}}>
+             <div class="exportink"></div>
+              <div class="exportinkinnerbox"></div>
+               <div class="chkbox-inner">
+                 <div class="chkboxmarker">
+                    <div class="tickmark"></div>
+                    <div class="ticklarge"></div>
+                 </div>
+               </div>
+
+            </div>
+
+            <div class="appointtabcell chkboxContent ml20" ele="dayDiv" name="FRIDAY">
+              Friday
+            </div>
+         </label>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl fromtime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="FRIDAY-FROM">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}> <span class="swap switcham selected" name="AM">AM</span> <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl totime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="FRIDAY-TO">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}> <span class="swap switcham selected" name="AM">AM</span> <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+     </div>
+     <div class="appointtable list-row non-businessday">
+       <div class="appointtabcell">
+         <label class="labels-container">
+           <div aria-checked="false" class="checkbox isChecked" {{action 'toggleDay'}}>
+             <div class="exportink"></div>
+              <div class="exportinkinnerbox"></div>
+               <div class="chkbox-inner">
+                 <div class="chkboxmarker">
+                    <div class="tickmark"></div>
+                    <div class="ticklarge"></div>
+                 </div>
+               </div>
+
+            </div>
+
+            <div class="appointtabcell chkboxContent ml20" ele="dayDiv" name="SATURDAY">
+              Saturday
+            </div>
+         </label>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl fromtime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select class="selecttime inputbox url dispinl fl" id="SATURDAY-FROM">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span></div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}> <span class="swap switcham selected" name="AM">AM</span> <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl totime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select class="selecttime inputbox url dispinl fl" id="SATURDAY-TO">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+              <span class="swap switcham selected" name="AM">AM</span>
+              <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+     </div>
+     <div class="appointtable list-row non-businessday">
+       <div class="appointtabcell">
+         <label class="labels-container">
+           <div aria-checked="false" class="checkbox isChecked" {{action 'toggleDay'}}>
+             <div class="exportink"></div>
+              <div class="exportinkinnerbox"></div>
+               <div class="chkbox-inner">
+                 <div class="chkboxmarker">
+                    <div class="tickmark"></div>
+                    <div class="ticklarge"></div>
+                 </div>
+               </div>
+
+            </div>
+
+            <div class="appointtabcell chkboxContent ml20" ele="dayDiv" name="SUNDAY">
+              Sunday
+            </div>
+         </label>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl fromtime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select class="selecttime inputbox url dispinl fl" id="SUNDAY-FROM">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+              <span class="swap switcham selected" name="AM">AM</span>
+              <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+       <div class="appointtabcell">
+         <div class="dis-inbl fl totime"> <span class="selectbox choosetime fl pos-rel boxsize">
+                  <select  class="selecttime inputbox url dispinl fl" id="SUNDAY-TO">
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+
+
+
+                  </select></span> </div>
+         <div class="dis-inbl fl">
+           <div class="switch dis-inbl" {{action "switchampm"}}>
+             <span class="swap switcham selected" name="AM">AM</span>
+             <span class="swap switchpm" name="PM">PM</span> </div>
+
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+       </div>
+
+{{yield}}

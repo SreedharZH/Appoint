@@ -22,16 +22,16 @@
          </div>
        </div>
            <div class="col-middle dis-inbl fl boxsize">
-                 {{partial 'setup-wizard/binfo'}}
-                 {{partial 'setup-wizard/bhours'}}
-                  {{partial 'setup-wizard/service'}}
-                  {{partial 'setup-wizard/staff'}}
+                  {{setup-wizard.sw-binfo}}
+                  {{setup-wizard.sw-bhours}}
+                  {{setup-wizard.sw-service action="addService"}}
+                  {{setup-wizard.sw-staff}}
                   <div class="steps">
                       <span>Step &nbsp; 1 of 4</span>
                   </div>
 
                   <div {{action 'backStep'}} class="btn-back hide boxsize">
-                    <button class="backbtn dis-inbl"> </button>
+                    <button class="backbtn dis-inbl"> Back </button>
                   </div>
 
                   <div {{action 'nextStep'}} class="btn-nxt boxsize">
