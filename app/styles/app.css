@@ -426,6 +426,12 @@ button {
 	left: 0;
 	right: 0;
 }
+.user-profile{
+	background: rgba(0, 0, 0, 0) url("/images/user-profile.jpg") no-repeat scroll 0 0 / 100% auto;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
 .grey-color {
 	color: #666666;
 }
