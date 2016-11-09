@@ -1787,3 +1787,248 @@ select:-moz-focusring {
 	padding: 7px 0;
 }
 /*my-desk*/
+
+/*calendar*/
+.header-secondary{
+	border-bottom:1px solid #d4d4e0;
+	padding:0 30px;
+	height:64px;
+}
+.header-secondary .appointment-view{
+	padding:15px 15px 15px 0;
+}
+.header-secondary .appointment-view .view-label{
+	font-size:12px;
+	color:#4a4774;
+	font-family: libre_franklinregular;
+	padding:5px 5px 5px 0;
+}
+.header-secondary .appointment-view .view-type{
+	border-radius:3px;
+	vertical-align:middle;
+}
+.header-secondary .appointment-view .view-type .calender-icon{
+	background:url("/images/sprite.png") 0 0 no-repeat;
+	width:16px;
+	height:16px;
+}
+.header-secondary .appointment-view .view-type .view-active{
+	padding:8px;
+	border:1px solid #cbd1e2;
+}
+.header-secondary .appointment-view .view-type .view-active.active{
+	background:#8b80b8;
+	border:1px solid #8b80b8;
+}
+.header-secondary .appointment-view .view-type .list-icon{
+	background:url("/images/sprite.png") 1px -22px no-repeat;
+	width:16px;
+	height:16px;
+	opacity:0.5;
+}
+.header-secondary .services{
+	padding:23px 40px;
+}
+.dropdown-label{
+	font-size:13px;
+	color:#666;
+	font-family: libre_franklinregular;
+	margin-right:10px;
+}
+.dropdown .label{
+	color:#000;
+	font-size:13px;
+	font-family: libre_franklinregular;
+	vertical-align:middle;
+}
+.dropdown .arrw-icon{
+	background:url("/images/sprite.png") 3px -39px no-repeat;
+	width:16px;
+	height:16px;
+	margin-left:5px;
+}
+.header-secondary .book-button{
+	padding:12px 0;
+}
+.header-secondary .book-button button{
+	background: rgba(80,56,113,1);
+	background: -moz-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(80,56,113,1)), color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(80,56,113,1)), color-stop(100%, rgba(136,92,182,1)));
+	background: -webkit-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
+	background: -o-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
+	background: -ms-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
+	background: linear-gradient(to right, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#503871', endColorstr='#885cb6', GradientType=1 );
+	border-radius:50px;
+	padding:10px 40px;
+	color:#fff;
+	font-size:14px;
+	font-family: libre_franklinregular;
+	font-weight:300;
+}
+.header-secondary .book-button button:before{
+	content:'+';
+	font-family: libre_franklinregular;
+    font-size: 24px;
+    height: 20px;
+    line-height: 1;
+    vertical-align: middle;
+	margin: -6px 10px 0 0;
+	display:inline-block;
+}
+.calendar-header{
+	padding:0 30px;
+}
+.calendar-header .view-style{
+	margin:30px 0;
+}
+.calendar-header .view-style span{
+	color:#8b80b8;
+	font-size:14px;
+	font-family: libre_franklinregular;
+	padding:5px 15px;
+	border-radius:3px;
+}
+.calendar-header .view-style span.active{
+	border:2px solid #8b80b8;
+	color:#404081;
+	line-height:1;
+}
+.calendar-style .calendar-iconBlack{
+	background:url("/images/sprite.png") 0px -60px no-repeat;
+	width:16px;
+	height:16px;
+	margin-bottom:5px;
+}
+.calendar-style .calendar-week .week{
+	color:#666666;
+	font-size:16px;
+	font-family: libre_franklinregular;
+	font-weight:200;
+	margin:0 30px;
+}
+.calendar-header .calendar-style{
+	margin:21px 0;
+	padding-right: 200px;
+}
+.calendar-style .calendar-week .prev,
+.calendar-style .calendar-week .next{
+	background:url("/images/sprite.png") 0px -86px no-repeat;
+	width:10px;
+	height:17px;
+	position:relative;
+	top:3px;
+}
+.calendar-style .calendar-week .next{
+	background:url("/images/sprite.png") 0px -113px no-repeat;
+}
+.calendar {
+	border-top:1px solid #e2e6f1;
+}
+.calendar .calendar-titleRow,
+.calendar .appointment-row{
+	background:#f2f2f6;
+	width:100%;
+	height:80px;
+	border-bottom:1px solid #e2e6f1;
+}
+.calendar .appointment-row{
+	background:#fff;
+	height:200px;
+}
+.calendar-titleRow .staff,
+.calendar-titleRow .calendar-day,
+.appointment-row .staff,
+.appointment-row .appointments{
+	border-right:1px solid #e2e6f1;
+	height:100%;
+}
+.calendar-titleRow .staff,
+.appointment-row .staff{
+	width:10%;
+	padding:30px 10px 30px 20px;
+}
+.calendar-titleRow .calendar-day{
+	width:15%;
+	padding:20px 20px;
+	color:#8b80b8;
+	font-size:14px;
+}
+.calendar-titleRow .calendar-day.holiday,
+.appointment-row .appointments.holiday{
+	width:7.5%;
+}
+.appointment-row .appointments.holiday{
+	padding:0;
+}
+.appointment-row .appointments.holiday .break{
+	background:url("/images/holiday.png") repeat-y;
+	width:40px;
+	height:100%;
+}
+.calendar-day .day{
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:300;
+	margin-bottom:3px;
+	font-family: libre_franklinregular;
+}
+.calendar-day .date{
+	font-size:22px;
+	color:#4a4774;
+	font-weight:lighter;
+	font-family: libre_franklinlight;
+}
+.calendar-day .curr-day{
+	text-transform:uppercase;
+	color:#9c64a1;
+	font-size:12px;
+}
+.appointment-row .staff .staff-name{
+	font-size:12px;
+	color:#000000;
+	margin-top:13px;
+	font-family: libre_franklinregular;
+}
+.appointment-row .staff{
+	padding:51px 20px;
+}
+.appointment-row .staff img{
+	border: 6px solid #fff;
+    border-radius: 50%;
+	transition:all 0.5s ease 0s;
+}
+.appointment-row .staff:hover img{
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.appointment-row .appointments{
+	color:#bbbbbb;
+	font-size:12px;
+	font-family: 'Libre Franklin', sans-serif;
+	padding:15px 20px;
+	width:15%;
+}
+.appointments .total-appointments{
+	color:#8b80b8;
+	font-size:14px;
+	font-weight:300;
+	margin-bottom:15px;
+}
+.appointments .total-appointments .total{
+	color:#404081;
+	font-size:36px;
+	font-weight:lighter;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.appointments .appointments-booked ul li{
+	color:#666666;
+	font-size:12px;
+	font-family: libre_franklinlight;
+	font-weight:300;
+	padding:3px 0;
+}
+.appointments .appointments-booked ul li.deactive{
+	color:#bbbbbb;
+}
+/*calendar*/
